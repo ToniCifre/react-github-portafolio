@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { TranslationsProvider } from 'context-multi-language';
+
+import {translations} from "./translator";
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <TranslationsProvider translations={translations} defaultLocale='en'>
+          <App />
+      </TranslationsProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
