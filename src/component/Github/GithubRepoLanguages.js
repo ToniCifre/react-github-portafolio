@@ -15,12 +15,10 @@ class GithubRepoLanguages extends Component {
             return (
                 <Box border={1} borderColor="grey.300" boxShadow={2} borderRadius="20px" p={2}  style={{minHeight: 200, minWidth:200}}>
                     <h3>{translator.languages}</h3>
-                    <Box bgcolor='rgb(232, 244, 253)' border={1} borderColor="grey.300" boxShadow={1} borderRadius="20px" p={[2, 3, 4]}>
-                        <Alert severity="info">
+                        <Alert severity="info" style={{borderRadius:20}}>
                             <AlertTitle>Info</AlertTitle>
                             {error}
                         </Alert>
-                    </Box>
                 </Box>
             )
         } else {
@@ -49,9 +47,9 @@ class GithubRepoLanguages extends Component {
             };
 
             return (
-                <Box border={1} borderColor="grey.300" boxShadow={2} borderRadius="20px" p={2}  style={{minHeight: 200, minWidth:200}}>
+                <Box border={1} borderColor="background.darker" bgcolor="background.darker" boxShadow={2} borderRadius="20px" p={2}  style={{minHeight: 200, minWidth:200}}>
                     <h3>{translator.languages}</h3>
-                    <Doughnut data={data} options={options} height={1} width={1}/>
+                    <Doughnut data={data} options={options} height={1} width={1} />
                 </Box>
             )
         }

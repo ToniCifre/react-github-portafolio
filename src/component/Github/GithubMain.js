@@ -35,7 +35,7 @@ class GithubMain extends Component {
 
         if (error !== '') {
             return (
-                <Alert severity="error">
+                <Alert severity="error" style={{borderRadius:20}}>
                     <AlertTitle>Error</AlertTitle>
                     {error}
                 </Alert>

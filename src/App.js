@@ -1,53 +1,77 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
-import './css/App.css';
-
+import React, {useState} from 'react';
 import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
 
-import { useTranslations } from 'context-multi-language';
-import Example from "./component/Example";
-import Github from "./page/Github";
-import Loader from "./component/Loading";
+import {useTranslations} from 'context-multi-language';
 
+import Github from "./page/Github";
+import Loader from "./component/NavBar/Loading";
+import NavBar from "./component/NavBar/NavBar";
+
+import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import {ThemeProvider} from "@material-ui/styles";
+import Resume from "./page/Resume";
+import deepOrange from "@material-ui/core/colors/deepOrange";
+import orange from "@material-ui/core/colors/orange";
+import deepPurple from "@material-ui/core/colors/deepPurple";
+import lightBlue from "@material-ui/core/colors/lightBlue";
 
 const App = () => {
-  const { t, changeLanguage, languages } = useTranslations();
+    const {t} = useTranslations();
 
-    if (Object.entries(t).length !== 0){
+
+    const [darkState, setDarkState] = useState(false);
+    const palletType = darkState ? "dark" : "light";
+    const mainPrimaryColor = darkState ? orange[500] : lightBlue[500];
+    const mainSecondaryColor = darkState ? deepOrange[900] : deepPurple[500];
+    const darkerBackgroundColor = darkState ? '#262626' : '#fff';
+    const darkTheme = createMuiTheme({
+        palette: {
+            type: palletType,
+            primary: {
+                main: mainPrimaryColor
+            },
+            secondary: {
+                main: mainSecondaryColor
+            },
+            background: {
+                darker: darkerBackgroundColor,
+            }
+        }
+    });
+
+    const switchTheme = () => {
+        setDarkState(!darkState);
+    }
+
+    if (Object.entries(t).length !== 0) {
         return (
-            <div className="App">
+            <ThemeProvider theme={darkTheme}>
 
-                <ButtonGroup>
-                    {languages.map((language) => (
-                        <Button key={language} onClick={() => changeLanguage(language)}>
-                            {language}
-                        </Button>
-                    ))}
-                </ButtonGroup>
+                <div className="App">
+                    <Router>
+                        <NavBar translator={t.navBar} switchTheme={switchTheme}/>
 
+                        <Switch>
+                            <Route path="/github">
+                                <Github translator={t.github}/>
+                            </Route>
 
-                <Router>
-                    <Switch>
+                            <Route exact path="/">
+                                <Resume/>
+                            </Route>
 
-                        <Route exact path="/trad">
-                            <Example t={t}/>
-                        </Route>
-                        <Route path="/github">
-                            <Github translator={t.github}/>
-                        </Route>
-                        <Route exact path="/">
-                            <Redirect to={'/github'}/>
-                        </Route>
-                        <Route path='*' exact>
-                            <h1>Page not found</h1>
-                        </Route>
-                    </Switch>
-                </Router>
-            </div>
+                            <Route path='*' exact>
+                                <h1>Page not found</h1>
+                            </Route>
+                        </Switch>
+                    </Router>
+                </div>
+            </ThemeProvider>
+
         );
-    }else {
-        return <Loader {...{size: 200, center: true}} />;
+    } else {
+        return <ThemeProvider theme={darkTheme}> <Loader {...{size: 200, center: true}} />; </ThemeProvider>
+
     }
 };
 

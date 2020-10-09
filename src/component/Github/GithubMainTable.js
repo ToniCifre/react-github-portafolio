@@ -20,6 +20,8 @@ import ViewColumn from '@material-ui/icons/ViewColumn';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LockIcon from "@material-ui/icons/Lock";
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import OpenRepoIcon from '@material-ui/icons/OpenInNew';
 import DescriptionOpenIcon from '@material-ui/icons/Description';
 import DescriptionCloseIcon from '@material-ui/icons/InsertDriveFile';
@@ -65,7 +67,7 @@ class GithubMainTable extends Component {
                         rowData.private ?
                             (<div>
                                 <Tooltip title={translator.openRepo}>
-                                    <Link to={'/github/'+rowData.name} style={{color: 'black', marginRight:10}}>
+                                    <Link to={'/github/'+rowData.name} style={{color: 'currentcolor', marginRight:10}}>
                                         <OpenRepoIcon href={rowData.name}/>
                                     </Link>
                                 </Tooltip>
@@ -75,12 +77,12 @@ class GithubMainTable extends Component {
                             </div>) :
                             (<div>
                                 <Tooltip title={translator.openRepo}>
-                                    <Link to={'/github/'+rowData.name} style={{color: 'black', marginRight:10}}>
+                                    <Link to={'/github/'+rowData.name} style={{color: 'currentcolor', marginRight:10}}>
                                         <OpenRepoIcon href={rowData.name}/>
                                     </Link>
                                 </Tooltip>
                                 <Tooltip title={translator.viewGithub}>
-                                    <a href={rowData.html_url} style={{color: 'black'}}>
+                                    <a href={rowData.html_url} style={{color: 'currentcolor'}}>
                                         <GitHubIcon href={rowData.html_url}/>
                                     </a>
                                 </Tooltip>
@@ -91,8 +93,8 @@ class GithubMainTable extends Component {
             ];
 
             return (
-                <Box border={1} borderColor="grey.300" boxShadow={2} borderRadius="20px" p={2} style={{marginTop: 25}}>
-                    <Typography variant="h3" component="h4" gutterBottom align={"center"}>
+                <Box border={1} borderColor="background.paper" bgcolor="background.darker" boxShadow={2} borderRadius="20px" p={0} style={{marginTop: 25}} >
+                    <Typography variant="h3" gutterBottom align={"center"} style={{paddingTop: 20}}>
                         {translator.allRepo}
                     </Typography>
                     <MaterialTable
@@ -101,11 +103,12 @@ class GithubMainTable extends Component {
                         data={repoList}
                         icons={tableIcons}
                         options={{grouping: true}}
+                        style={{borderRadius: 20}}
                         detailPanel={
                             [{
                                 tooltip: translator.table.showDesc,
-                                icon: DescriptionCloseIcon,
-                                openIcon: DescriptionOpenIcon,
+                                icon: ExpandMoreIcon,
+                                openIcon: ExpandLessIcon,
                                 render: rowData => {
                                     if (rowData.description) {
                                         return (

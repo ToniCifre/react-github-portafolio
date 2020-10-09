@@ -1,20 +1,23 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 
-import {Box} from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+import {Alert, AlertTitle} from "@material-ui/lab";
 import Container from "@material-ui/core/Container";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import Typography from "@material-ui/core/Typography";
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-import marked from "marked";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import {Base64} from 'js-base64';
 
-import Loader from "../component/Loading";
-import GithubRepoLanguages from "../component/GithubRepoLanguages";
-import GithubRepoReadme from "../component/GithubRepoReadme";
-import GithubRepoDescription from "../component/GithubRepoDescription";
-import {Alert, AlertTitle} from "@material-ui/lab";
-import Typography from "@material-ui/core/Typography";
+import marked from "marked";
+
+import Loader from "../component/NavBar/Loading";
+import GithubRepoReadme from "../component/Github/GithubRepoReadme";
+import GithubRepoLanguages from "../component/Github/GithubRepoLanguages";
+import GithubRepoDescription from "../component/Github/GithubRepoDescription";
+import IconButton from "@material-ui/core/IconButton";
 
 
 class GithubRepo extends Component {
@@ -81,12 +84,10 @@ class GithubRepo extends Component {
                 <Container maxWidth={"md"} style={{marginTop: 25, marginBottom: 25}}>
                     <h1>{this.props.repo}</h1>
 
-                    <Box bgcolor='rgb(253, 236, 234)' border={1} borderColor="grey.300" boxShadow={1} borderRadius="20px" p={[2, 3, 4]}>
-                        <Alert severity="error">
+                        <Alert severity="error" style={{borderRadius:20}}>
                             <AlertTitle>Error</AlertTitle>
                             {error}
                         </Alert>
-                    </Box>
                 </Container>
                 )
         }else {
@@ -106,13 +107,21 @@ class GithubRepo extends Component {
                 <Container maxWidth={"md"} style={{marginTop: 25, marginBottom: 25}}>
                     {!isLoadedLanguages || !isLoadedReadme ? <Loader {...{size: 200, center: true}} /> : null}
 
-                    <Grid container alignItems="stretch" spacing={3} style={{marginBottom: 8}}>
-                        <Grid item xs={12} sm={8} md={9} zeroMinWidth={true}>
+
+                    <Grid container alignItems="stretch" spacing={[1, 2, 3]} style={{marginBottom: 8}}>
+                        <Grid item xs={12} sm={2} md={1} zeroMinWidth={true} style={{display: 'flex'}}>
+                            <IconButton aria-label="Back" style={{margin: 'auto'}}>
+                                <Link to='/github' style={{height: 24, width:24, color:'inherit'}}>
+                                    <ArrowBackIcon />
+                                </Link>
+                            </IconButton>
+                        </Grid>
+                        <Grid item xs={12} sm={10} md={8} zeroMinWidth={true}>
                             <Typography variant="h3" component="h4" gutterBottom>
                                 {this.props.repo}
                             </Typography>
                         </Grid>
-                        <Grid item xs={12} sm={4} md={3} style={{margin: "auto"}} zeroMinWidth={true}>
+                        <Grid item xs={12} sm={12} md={3} style={{margin: "auto"}} zeroMinWidth={true}>
                             <Button href={repo.html_url}>
                                 <GitHubIcon style={{marginRight: 6}}/>{translator.viewGithub}
                             </Button>

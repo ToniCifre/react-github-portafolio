@@ -1,11 +1,17 @@
-/*.App {*/
-/*  text-align: center;*/
-/*}*/
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-/*.App-logo {*/
-/*  height: 40vmin;*/
-/*  pointer-events: none;*/
-/*}*/
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 .markdown-body {
     box-sizing: border-box;
     margin: 0 auto;
@@ -34,6 +40,9 @@
     }
 }
 
+.MuiPaper-root.MuiMenu-paper.MuiPopover-paper {
+    background-color: #000000d4 !important;
+}
 
 /*@media (prefers-reduced-motion: no-preference) {*/
 /*  .App-logo {*/

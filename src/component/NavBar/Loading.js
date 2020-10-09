@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/loading.scss';
+import '../../css/loading.scss';
 
 const { PropTypes } = React;
 const TIMER = 150; // Milliseconds between moving the next block

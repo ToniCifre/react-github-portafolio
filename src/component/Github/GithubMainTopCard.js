@@ -15,13 +15,12 @@ import Skeleton from '@material-ui/lab/Skeleton';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Box from '@material-ui/core/Box';
 
-import code from "../images/code.jpg"
+import code from "../../images/code.jpg"
 
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
-        boxShadow: '0 3px 5px 3px rgba(160, 160, 160, .3)',
+        maxWidth: 345
     },
     icon: {
         marginRight: 10
@@ -53,7 +52,7 @@ export default function GithubMainTopCard({data, translator }) {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root}>
+        <Card className={classes.root} bgcolor="textPrimary">
             <Link to={'/github/'+data.name} className={classes.link}>
             <CardActionArea>
                 {data ?
@@ -75,19 +74,19 @@ export default function GithubMainTopCard({data, translator }) {
                     {data ?
                         (
                             <React.Fragment>
-                                <Typography gutterBottom variant="h5" component="h2">
+                                <Typography gutterBottom variant="h5" color="textPrimary">
                                     {data.name}
                                 </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p">
+                                <Typography variant="body2" color="textSecondary">
                                     {translator.repoDescription[data.name]}
                                 </Typography>
                             </React.Fragment>
                         ) : (
                             <React.Fragment>
-                                <Typography gutterBottom variant="h5" component="h2">
+                                <Typography gutterBottom variant="h5">
                                     <Skeleton/>
                                 </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p">
+                                <Typography variant="body2">
                                     <Skeleton/>
                                     <Skeleton/>
                                     <Skeleton/>

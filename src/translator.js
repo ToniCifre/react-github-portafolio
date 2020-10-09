@@ -2,9 +2,12 @@ export const translations = {
   "languages": ["en","es"],
   "translations": {
     "en": {
-      "password": "Password",
-      "phoneNumber": "Phone Number",
-      "signIn": "Sign in!",
+      'navBar': {
+        'resume': 'Resume',
+        'repository': 'Repository',
+        'switch_theme': 'Switch Theme',
+
+      },
       "github": {
         "topRepo": "Top Repositories",
         "allRepo": "All Repositories",
@@ -40,10 +43,12 @@ export const translations = {
       }
     },
     "es": {
-      "password": "contra",
-      "phoneNumber": "telefono",
-      "signIn": "Sign entra!",
 
+      'navBar': {
+        'resume': 'Currículum',
+        'repository': 'Repositorio',
+        'switch_theme': 'Cambiar Tema'
+      },
       "github": {
         "topRepo": "Top Respositorios",
         "allRepo": "Todos los Respositorios",

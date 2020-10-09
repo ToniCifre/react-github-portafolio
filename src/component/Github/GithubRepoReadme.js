@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 
 import { Alert, AlertTitle } from '@material-ui/lab';
 
-import 'github-markdown-css/github-markdown.css'
 import {Box} from "@material-ui/core";
+
+import '../../css/github-markdown.css'
 
 
 class GithubRepoReadme extends Component{
@@ -15,12 +16,10 @@ class GithubRepoReadme extends Component{
             return (
                 <Box border={1} borderColor="grey.300" boxShadow={2} borderRadius="20px" p={2}>
                     <h3>README.md</h3>
-                    <Box bgcolor='rgb(232, 244, 253)' border={1} borderColor="grey.300" boxShadow={1} borderRadius="20px" p={[2, 3, 4]}>
-                        <Alert severity="info">
+                        <Alert severity="info" style={{borderRadius:20}}>
                             <AlertTitle>Info</AlertTitle>
                             {error}
                         </Alert>
-                    </Box>
                 </Box>
 
             )
@@ -28,8 +27,9 @@ class GithubRepoReadme extends Component{
             const { readme } = this.props;
 
             return (
-                <Box border={1} borderColor="grey.300" boxShadow={2} borderRadius="20px" p={[1, 2, 3]}>
+                <Box border={1} borderColor="background.darker" bgcolor="background.darker" boxShadow={2} borderRadius="20px" p={[1, 2, 3]}>
                     <h3>README.md</h3>
+
                     <article className={'markdown-body'} style={{padding: 10}} dangerouslySetInnerHTML={{__html: readme}}/>
                 </Box>
             )

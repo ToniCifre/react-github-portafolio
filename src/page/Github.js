@@ -1,16 +1,13 @@
 import React, {useEffect, useState} from 'react';
-
 import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
 
-import {Alert, AlertTitle} from "@material-ui/lab";
-
 import GithubRepo from "./GithubRepo";
-import Loader from "../component/Loading";
+import Loader from "../component/NavBar/Loading";
+import GithubMain from "../component/Github/GithubMain";
 
-
-import Container from "@material-ui/core/Container";
 import {Box} from "@material-ui/core";
-import GithubMain from "../component/GithubMain";
+import {Alert, AlertTitle} from "@material-ui/lab";
+import Container from "@material-ui/core/Container";
 
 const {Octokit} = require("@octokit/rest");
 
@@ -19,7 +16,7 @@ const Github = (translator) => {
     const [owner, setOwner] = useState(0);
     const [error, setError] = useState(0);
 
-    const octokit = new Octokit({auth: "Your_Token_ID",});
+    const octokit = new Octokit({auth: "7ebc239d19be4b7393a51c07b510275339569df4",});
 
     useEffect(() => {
         octokit.request("/user").then(value => {
@@ -34,35 +31,30 @@ const Github = (translator) => {
         });
     }, []);
 
+
     if (error){
         return (
             <Container maxWidth={"md"}>
-                <Box bgcolor='rgb(253, 236, 234)' border={1} borderColor="grey.300" boxShadow={2} borderRadius="20px" p={[2, 3, 4]}>
-                    <Alert severity="error">
+                    <Alert severity="error" style={{borderRadius:20}}>
                         <AlertTitle>Error</AlertTitle>
                         {error}
                     </Alert>
-                </Box>
             </Container>
         )
     }else if (owner){
         return (
             <Router>
                 <Switch>
-                    <Route path="/github/:name"
+
+                    <Route exact path="/github">
+                        <GithubMain translator={translator} octokit={octokit}/>
+                    </Route>
+
+                    <Route path="/github/:name" exact
                            render={({ match }) =>
                                <GithubRepo translator={translator} octokit={octokit} owner={owner} repo={match.params.name}/>
                            } />
 
-                    <Route path="/github">
-                        <GithubMain translator={translator} octokit={octokit}/>
-                    </Route>
-                    <Route exact path="/">
-                        <Redirect to={'/github'}/>
-                    </Route>
-                    <Route path='*' exact>
-                        <h1>Page not found</h1>
-                    </Route>
                 </Switch>
             </Router>
         )

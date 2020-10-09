@@ -18,7 +18,7 @@ class GithubMainTop extends Component {
 
         if (!repoList) {
             return (
-                <Box border={1} borderColor="grey.300" boxShadow={2} borderRadius="20px" p={2}>
+                <Box border={1} borderColor="background.paper" bgcolor="background.darker" boxShadow={2} borderRadius="20px" p={2}  style={{paddingBottom: 30}}>
                     <Typography variant="h2" component="h3" gutterBottom>
                         <Skeleton/>
                     </Typography>
@@ -34,8 +34,8 @@ class GithubMainTop extends Component {
         } else {
             const {translator} = this.props;
             return (
-                <Box border={1} borderColor="grey.300" boxShadow={2} borderRadius="20px" p={2} style={{paddingBottom: 30}}>
-                    <Typography variant="h3" component="h4" gutterBottom align={"center"}>
+                <Box border={1} borderColor="background.darker" bgcolor="background.darker" boxShadow={2} borderRadius="20px" p={2} style={{paddingBottom: 30}}>
+                    <Typography variant="h3" gutterBottom align={"center"}>
                         {translator.topRepo}
                     </Typography>
                     <Grid container direction="row" justify="center" alignItems="stretch" spacing={3}
