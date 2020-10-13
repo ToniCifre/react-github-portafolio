@@ -1,30 +1,28 @@
 import React, {Component, forwardRef} from 'react';
 
 import {Box} from "@material-ui/core";
+import Tooltip from '@material-ui/core/Tooltip';
 import Skeleton from "@material-ui/lab/Skeleton";
 import Typography from "@material-ui/core/Typography";
-import Tooltip from '@material-ui/core/Tooltip';
 
 
 import MaterialTable from 'material-table';
 
-import ArrowDownward from '@material-ui/icons/ArrowDownward';
-import ChevronLeft from '@material-ui/icons/ChevronLeft';
-import ChevronRight from '@material-ui/icons/ChevronRight';
 import Clear from '@material-ui/icons/Clear';
+import LockIcon from "@material-ui/icons/Lock";
+import Search from '@material-ui/icons/Search';
+import Remove from '@material-ui/icons/Remove';
 import FirstPage from '@material-ui/icons/FirstPage';
 import LastPage from '@material-ui/icons/LastPage';
-import Remove from '@material-ui/icons/Remove';
-import Search from '@material-ui/icons/Search';
-import ViewColumn from '@material-ui/icons/ViewColumn';
-
 import GitHubIcon from '@material-ui/icons/GitHub';
-import LockIcon from "@material-ui/icons/Lock";
+import ViewColumn from '@material-ui/icons/ViewColumn';
+import OpenRepoIcon from '@material-ui/icons/OpenInNew';
+import ChevronLeft from '@material-ui/icons/ChevronLeft';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import OpenRepoIcon from '@material-ui/icons/OpenInNew';
-import DescriptionOpenIcon from '@material-ui/icons/Description';
-import DescriptionCloseIcon from '@material-ui/icons/InsertDriveFile';
+import ChevronRight from '@material-ui/icons/ChevronRight';
+import ArrowDownward from '@material-ui/icons/ArrowDownward';
+
 import {Link} from "react-router-dom";
 
 class GithubMainTable extends Component {

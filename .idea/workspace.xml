@@ -1,9 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7bf9f99-47b4-4947-960f-54e2b4e60c9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/resume/ResumeAbilities.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/resume/ResumeAbilitiesPuntuation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/resume/ResumeTopDescription.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/B1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/B2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/B3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/B4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/B5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/B6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/B7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/B8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubMainTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubMainTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubMainTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubMainTop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubMainTopCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubMainTopCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubRepoDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubRepoDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubRepoLanguages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubRepoLanguages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubRepoReadme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubRepoReadme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/NavBar/ButtonMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NavBar/ButtonMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NavBar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/NavBar/ThemeSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NavBar/ThemeSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/Github.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Github.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/GithubRepo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/GithubRepo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Resume.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/translator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/translator.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gDzI5SHbCaMqAzRZ6n2BAiyV6V" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component/NavBar" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\tonix\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\202.7660.23\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\images" />
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\NavBar" />
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\Github" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\NavBar" />
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\css" />
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="eject" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="eject" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.eject" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7bf9f99-47b4-4947-960f-54e2b4e60c9f" name="Default Changelist" comment="" />
+      <created>1601393966048</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601393966048</updated>
+      <workItem from="1601393968032" duration="2357000" />
+      <workItem from="1601970124584" duration="3819000" />
+      <workItem from="1602236188159" duration="22022000" />
+      <workItem from="1602269374203" duration="21000" />
+      <workItem from="1602269745322" duration="150000" />
+      <workItem from="1602603859247" duration="6360000" />
+    </task>
+    <task id="LOCAL-00001" summary="Ready to start Resume page">
+      <created>1602268740900</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602268740900</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ready to start Resume page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ready to start Resume page" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="192" y="2" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601394715438">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="192" y="2" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1601394715438" />
+    <state x="463" y="104" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1601394218154">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="104" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.768@0.0.1366.768" timestamp="1601394218154" />
+    <state x="576" y="21" key="CommitChangelistDialog2" timestamp="1602268739496">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="576" y="21" key="CommitChangelistDialog2/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602268739496" />
+    <state x="463" y="154" key="FileChooserDialogImpl" timestamp="1601394230474">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="154" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1601394230474" />
+    <state width="1899" height="318" key="GridCell.Tab.0.bottom" timestamp="1602610118560">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1345" height="206" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1601975180602" />
+    <state width="1899" height="318" key="GridCell.Tab.0.bottom/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610118560" />
+    <state width="1899" height="318" key="GridCell.Tab.0.center" timestamp="1602610118560">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1345" height="206" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1601975180602" />
+    <state width="1899" height="318" key="GridCell.Tab.0.center/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610118560" />
+    <state width="1899" height="318" key="GridCell.Tab.0.left" timestamp="1602610118560">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1345" height="206" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1601975180602" />
+    <state width="1899" height="318" key="GridCell.Tab.0.left/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610118560" />
+    <state width="1899" height="318" key="GridCell.Tab.0.right" timestamp="1602610118560">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1345" height="206" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1601975180602" />
+    <state width="1899" height="318" key="GridCell.Tab.0.right/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610118560" />
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2" timestamp="1602269379278">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602269379278" />
+    <state x="92" y="92" width="1736" height="896" key="dock-window-1" timestamp="1602261554662">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="dock-window-1/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602261554662" />
+    <state x="92" y="92" width="1736" height="896" key="dock-window-2" timestamp="1602261554662">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="dock-window-2/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602261554662" />
+    <state x="92" y="92" width="1736" height="896" key="dock-window-3" timestamp="1602261554663">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="dock-window-3/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602261554663" />
+    <state x="92" y="92" width="1736" height="896" key="dock-window-4" timestamp="1602261554663">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="dock-window-4/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602261554663" />
+    <state x="550" y="142" width="820" height="796" key="find.popup" timestamp="1602258682414">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="391" y="101" width="583" height="566" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1601395680280" />
+    <state x="550" y="142" width="820" height="796" key="find.popup/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602258682414" />
   </component>
 </project>

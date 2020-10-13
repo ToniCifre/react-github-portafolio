@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 
+import {Box} from "@material-ui/core";
 import {Alert, AlertTitle} from '@material-ui/lab';
-import { withStyles  } from '@material-ui/core/styles';
 
 import {Doughnut} from 'react-chartjs-2';
-import {Box} from "@material-ui/core";
 
 class GithubRepoLanguages extends Component {
 

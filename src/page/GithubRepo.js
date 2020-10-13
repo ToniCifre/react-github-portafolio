@@ -6,18 +6,18 @@ import Button from "@material-ui/core/Button";
 import {Alert, AlertTitle} from "@material-ui/lab";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import GitHubIcon from "@material-ui/icons/GitHub";
-import {Base64} from 'js-base64';
+import IconButton from "@material-ui/core/IconButton";
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import marked from "marked";
+import {Base64} from 'js-base64';
 
 import Loader from "../component/NavBar/Loading";
 import GithubRepoReadme from "../component/Github/GithubRepoReadme";
 import GithubRepoLanguages from "../component/Github/GithubRepoLanguages";
 import GithubRepoDescription from "../component/Github/GithubRepoDescription";
-import IconButton from "@material-ui/core/IconButton";
 
 
 class GithubRepo extends Component {

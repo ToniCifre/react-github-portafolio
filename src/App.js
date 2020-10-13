@@ -1,19 +1,21 @@
 import React, {useState} from 'react';
-import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+import {ThemeProvider} from "@material-ui/styles";
+import orange from "@material-ui/core/colors/orange";
+import lightBlue from "@material-ui/core/colors/lightBlue";
+import deepPurple from "@material-ui/core/colors/deepPurple";
+import deepOrange from "@material-ui/core/colors/deepOrange";
+import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 
 import {useTranslations} from 'context-multi-language';
 
-import Github from "./page/Github";
-import Loader from "./component/NavBar/Loading";
-import NavBar from "./component/NavBar/NavBar";
-
-import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
-import {ThemeProvider} from "@material-ui/styles";
 import Resume from "./page/Resume";
-import deepOrange from "@material-ui/core/colors/deepOrange";
-import orange from "@material-ui/core/colors/orange";
-import deepPurple from "@material-ui/core/colors/deepPurple";
-import lightBlue from "@material-ui/core/colors/lightBlue";
+import Github from "./page/Github";
+import NavBar from "./component/NavBar/NavBar";
+import Loader from "./component/NavBar/Loading";
+import Toolbar from "@material-ui/core/Toolbar";
+
 
 const App = () => {
     const {t} = useTranslations();
@@ -53,11 +55,12 @@ const App = () => {
 
                         <Switch>
                             <Route path="/github">
+                                <Toolbar />
                                 <Github translator={t.github}/>
                             </Route>
 
                             <Route exact path="/">
-                                <Resume/>
+                                <Resume translator={t.resume}/>
                             </Route>
 
                             <Route path='*' exact>

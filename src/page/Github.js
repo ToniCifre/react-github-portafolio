@@ -1,13 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+import Container from "@material-ui/core/Container";
+import {Alert, AlertTitle} from "@material-ui/lab";
 
 import GithubRepo from "./GithubRepo";
 import Loader from "../component/NavBar/Loading";
 import GithubMain from "../component/Github/GithubMain";
-
-import {Box} from "@material-ui/core";
-import {Alert, AlertTitle} from "@material-ui/lab";
-import Container from "@material-ui/core/Container";
 
 const {Octokit} = require("@octokit/rest");
 
@@ -16,7 +15,7 @@ const Github = (translator) => {
     const [owner, setOwner] = useState(0);
     const [error, setError] = useState(0);
 
-    const octokit = new Octokit({auth: "7ebc239d19be4b7393a51c07b510275339569df4",});
+    const octokit = new Octokit({auth: "8349b9d44b13e304d03ed371fb2640fb31255178",});
 
     useEffect(() => {
         octokit.request("/user").then(value => {

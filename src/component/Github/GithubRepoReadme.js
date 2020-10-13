@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 
-import { Alert, AlertTitle } from '@material-ui/lab';
-
 import {Box} from "@material-ui/core";
+import { Alert, AlertTitle } from '@material-ui/lab';
 
 import '../../css/github-markdown.css'
 

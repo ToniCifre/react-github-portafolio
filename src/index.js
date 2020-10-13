@@ -1,21 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import * as serviceWorker from './serviceWorker';
+
 import './css/App.css';
 import App from './App';
 
-import * as serviceWorker from './serviceWorker';
-
-import { TranslationsProvider } from 'context-multi-language';
 import {translations} from "./translator";
+import { TranslationsProvider } from 'context-multi-language';
+
 
 let selectedLang = localStorage.getItem('lang') || ''
 if(selectedLang === '' || !translations.languages.includes(selectedLang)) {
     selectedLang = 'en'
     localStorage.setItem('lang', selectedLang)
 }
-
-
 
 ReactDOM.render(
   <React.StrictMode>

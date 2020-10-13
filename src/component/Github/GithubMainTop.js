@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
-import GithubMainTopCard from "./GithubMainTopCard";
 
-import Grid from '@material-ui/core/Grid';
-import Container from "@material-ui/core/Container";
 import {Box} from "@material-ui/core";
+import Grid from '@material-ui/core/Grid';
 import Skeleton from "@material-ui/lab/Skeleton";
 import Typography from "@material-ui/core/Typography";
-import Divider from '@material-ui/core/Divider';
+
+import GithubMainTopCard from "./GithubMainTopCard";
 
 
 class GithubMainTop extends Component {

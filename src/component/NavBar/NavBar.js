@@ -9,10 +9,9 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 
-
+import ButtonMenu from "./ButtonMenu";
 import ThemeSelector from "./ThemeSelector";
 import LanguageSelector from "./LanguageSelector";
-import ButtonMenu from "./ButtonMenu";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -96,7 +95,7 @@ export default function NavBar(props) {
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>
-            <Toolbar />
+            {/*<Toolbar />*/}
         </React.Fragment>
     );
 }
