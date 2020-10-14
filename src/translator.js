@@ -1,5 +1,5 @@
 export const translations = {
-  "languages": ["en","es"],
+  "languages": ["en","es","ca"],
   "translations": {
     "en": {
       'navBar': {
@@ -42,13 +42,17 @@ export const translations = {
         "noRepo": "This repository does not exist"
       },
       "resume": {
-        "description": "Programer dfgsdfjkghsklfdhg sdfklgh lskd fglksh dfkg skdfhg kskfgks fgkhs kdfhgklsh flkgh slkdf hgshdf g" +
-            "sdf gsjdfhg lkshdfglk hsfkldgh skldfhglks dfhglk",
+        "description": "I am a programming enthusiast studying the last year of Computer Engineering and previously " +
+            "graduated in cross-platform application development.",
         "abilities": {
           "title": "Abilities",
-          "abilitiesList": [['ghksjdfhg', 2], ['fgdfgs', 2], ['gsdfg', 5], ['jfgh', 1], ['erwtert', 3], ['sdf', 4],
-            ['ghksjdfhg', 2], ['fgdfgs', 2], ['gsdfg', 5], ['jfgh', 1], ['erwtert', 3], ['sdf', 4]]
+          "abilitiesList": [['Project Management', 3], ['Software Development', 4], ['Front End', 3], ['Back End', 4],
+            ['Aprencizaje Autonomo', 4], ['Data Base', 3], ['Metología Ágil', 3]]
         },
+        "contact": {
+          "title": "Contact mi",
+          "contactList": [['mail', 'tonicifrev@gmail.com'], ['github', '@ToniCifre'], ['phone', '+34651173909']]
+        }
       }
     },
     "es": {
@@ -62,7 +66,7 @@ export const translations = {
         "allRepo": "Todos los Respositorios",
 
         "description": "Descripción",
-        "languages": "Languajes",
+        "languages": "Lenguajes",
 
         "viewGithub": "Ver en Github",
         "openRepo": "Abrir repositorio",
@@ -90,14 +94,72 @@ export const translations = {
         "noRepo": "Este repositorio no existe"
       },
       "resume": {
-        "description": "Programador dfgsdfjkghsklfdhg sdfklgh lskd fglksh dfkg skdfhg kskfgks fgkhs kdfhgklsh flkgh slkdf hgshdf g" +
-            "sdf gsjdfhg lkshdfglk hsfkldgh skldfhglks dfhglk",
+        "description": "Soy un entusiasta de la programación cursando el último año de Ingeniería informática y " +
+            "licenciado previamente en desarrollo de aplicaciones multiplataforma.",
         "abilities": {
           "title": "Habilidades",
-          "abilitiesList": [['ghksjdfhg', 2], ['fgdfgs', 2], ['gsdfg', 5], ['jfgh', 1], ['erwtert', 3], ['sdf', 4],
-            ['ghksjdfhg', 2], ['fgdfgs', 2], ['gsdfg', 5], ['jfgh', 1], ['erwtert', 3], ['sdf', 4]]
+          "abilitiesList": [['Project Management', 3], ['Software Development', 4], ['Front End', 3], ['Back End', 4],
+            ['Aprencizaje Autonomo', 4], ['Bases de Datos', 3], ['Metología Ágil', 3]]
         },
+        "contact": {
+          "title": "Contac",
+          "contactList": [['mail', 'tonicifrev@gmail.com'], ['github', '@ToniCifre'], ['phone', '+34651173909']]
+        }
       }
+
     },
+    "ca": {
+      'navBar': {
+        'resume': 'Currículum',
+        'repository': 'Repositori',
+        'switch_theme': 'Cambiar Tema'
+      },
+      "github": {
+        "topRepo": "Respositoris Destacats",
+        "allRepo": "Tots els Respositorios",
+
+        "description": "Descripció",
+        "languages": "Llenguatjes",
+
+        "viewGithub": "Ves a Github",
+        "openRepo": "Obrir repositori",
+        "private": "Privat",
+
+        "repoDescription": {
+          "Erlang_Chat":"dlu spdfig pifdgpsu dfpighspifdgspifpvsig fdvglcvs",
+          "GameBoyJs":"sñdfh gpsdhfpgsfis`fdoihvsg òrehgñkjzfdnvg lwerufhqpdlgjhsdf" +
+              "g spdfuig hwprefñsandñcvjk hzpdfg sh`gosdfhnbs" +
+              "fgspfdkjhvsdfñ",
+          "HexGame":"fklu hgspfdlk jgspdfu hgspiufha`sdfhlskfdj vhoxcuvbs fdg" +
+              "sfdvpjhzxlvkjhxfouw ghoruthfuhvsfdlgk jshfg" +
+              "sfd gosfud"
+        },
+
+        "table": {
+          "name": "Nom",
+          "language": "Llenguatje",
+          "actions": "Accions",
+          "showDesc": "Veure Descripcións"
+        },
+
+        "noReadme":"Aquest repositori no disposa de README.md a Github.",
+        "noDescript":"Aquest repositori no disposa de descripció a Github.",
+        "noRepo": "Aquest repositori no existeix."
+      },
+      "resume": {
+        "description": "Sóc un entusiasta de la programació cursant l'últim any d'Enginyeria informàtica i llicenciat " +
+            "prèviament en desenvolupament d'aplicacions multiplataforma.",
+        "abilities": {
+          "title": "Habilidades",
+          "abilitiesList": [['Project Management', 3], ['Software Development', 4], ['Front End', 3], ['Back End', 4],
+            ['Aprenentatje Autònom', 4], ['Bases de Dades', 3], ['Metología Ágil', 3]]
+        },
+        "contact": {
+          "title": "Contac",
+          "contactList": [['mail', 'tonicifrev@gmail.com', 'mailto:tonicifrev@gmail.com'],
+            ['github', '@ToniCifre', 'https://github.com/ToniCifre'], ['phone', '+34651173909'], ['linkedin', 'toni-cifre', 'https://www.linkedin.com/in/toni-cifre/']]
+        }
+      }
+    }
   }
 };

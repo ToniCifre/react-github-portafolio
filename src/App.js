@@ -13,7 +13,7 @@ import {useTranslations} from 'context-multi-language';
 import Resume from "./page/Resume";
 import Github from "./page/Github";
 import NavBar from "./component/NavBar/NavBar";
-import Loader from "./component/NavBar/Loading";
+import Loader from "./component/Loading";
 import Toolbar from "@material-ui/core/Toolbar";
 
 
@@ -41,7 +41,7 @@ const App = () => {
         }
     });
 
-    const switchTheme = () => {
+    const switch_theme = () => {
         setDarkState(!darkState);
     }
 
@@ -51,7 +51,7 @@ const App = () => {
 
                 <div className="App">
                     <Router>
-                        <NavBar translator={t.navBar} switchTheme={switchTheme}/>
+                        <NavBar translator={t.navBar} switch_theme={switch_theme}/>
 
                         <Switch>
                             <Route path="/github">

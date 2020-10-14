@@ -5,7 +5,6 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
-import bg1 from '../../images/B1.jpg'
 import bg2 from '../../images/B2.jpg'
 import bg3 from '../../images/B3.jpg'
 import bg4 from '../../images/B4.jpg'
@@ -39,7 +38,7 @@ const ResumeTopDescription = (props) => {
     const classes = useStyles();
     const {description} = props
 
-    const bgImages = [bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8]
+    const bgImages = [bg2, bg3, bg4, bg5, bg6, bg7, bg8]
     const bgSelected = Math.floor(Math.random() * 8)
 
     return (

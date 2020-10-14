@@ -5,7 +5,7 @@ import Container from "@material-ui/core/Container";
 import {Alert, AlertTitle} from "@material-ui/lab";
 
 import GithubRepo from "./GithubRepo";
-import Loader from "../component/NavBar/Loading";
+import Loader from "../component/Loading";
 import GithubMain from "../component/Github/GithubMain";
 
 const {Octokit} = require("@octokit/rest");
@@ -15,7 +15,7 @@ const Github = (translator) => {
     const [owner, setOwner] = useState(0);
     const [error, setError] = useState(0);
 
-    const octokit = new Octokit({auth: "8349b9d44b13e304d03ed371fb2640fb31255178",});
+    const octokit = new Octokit({auth: "537d0fd5d8dc5d58d622a0fa74a72f829b00680e",});
 
     useEffect(() => {
         octokit.request("/user").then(value => {

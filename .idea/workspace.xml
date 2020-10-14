@@ -2,32 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7bf9f99-47b4-4947-960f-54e2b4e60c9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/resume/ResumeAbilities.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/resume/ResumeAbilitiesPuntuation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/resume/ResumeTopDescription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/B1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/B2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/B3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/B4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/B5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/B6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/B7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/B8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/resume/ResumeContact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Github/GithubMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubMain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubMainTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubMainTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubMainTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubMainTop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubMainTopCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubMainTopCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubRepoDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubRepoDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubRepoLanguages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubRepoLanguages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubRepoReadme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubRepoReadme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/NavBar/ButtonMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NavBar/ButtonMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/NavBar/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Loading.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NavBar/NavBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/NavBar/ThemeSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NavBar/ThemeSelector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/resume/ResumeAbilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/resume/ResumeAbilities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/resume/ResumeAbilitiesPunctuation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/resume/ResumeAbilitiesPunctuation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/resume/ResumeTopDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/resume/ResumeTopDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/B1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/Github.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Github.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/GithubRepo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/GithubRepo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Resume.js" afterDir="false" />
@@ -57,22 +46,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component/NavBar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component/resume" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\tonix\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\202.7660.23\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\images" />
-      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\NavBar" />
-      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\Github" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\resume" />
       <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\NavBar" />
       <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\css" />
       <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component" />
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\images" />
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\NavBar" />
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\Github" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -125,7 +116,8 @@
       <workItem from="1602236188159" duration="22022000" />
       <workItem from="1602269374203" duration="21000" />
       <workItem from="1602269745322" duration="150000" />
-      <workItem from="1602603859247" duration="6360000" />
+      <workItem from="1602603859247" duration="6573000" />
+      <workItem from="1602679114588" duration="7454000" />
     </task>
     <task id="LOCAL-00001" summary="Ready to start Resume page">
       <created>1602268740900</created>
@@ -134,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602268740900</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Description and abilities of resume">
+      <created>1602610529320</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602610529320</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ready to start Resume page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ready to start Resume page" />
+    <MESSAGE value="Description and abilities of resume" />
+    <option name="LAST_COMMIT_MESSAGE" value="Description and abilities of resume" />
   </component>
   <component name="WindowStateProjectService">
     <state x="192" y="2" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601394715438">
@@ -153,38 +153,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="104" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.768@0.0.1366.768" timestamp="1601394218154" />
-    <state x="576" y="21" key="CommitChangelistDialog2" timestamp="1602268739496">
+    <state x="576" y="21" key="CommitChangelistDialog2" timestamp="1602610528414">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="576" y="21" key="CommitChangelistDialog2/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602268739496" />
+    <state x="576" y="21" key="CommitChangelistDialog2/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610528414" />
     <state x="463" y="154" key="FileChooserDialogImpl" timestamp="1601394230474">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="154" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1601394230474" />
-    <state width="1899" height="318" key="GridCell.Tab.0.bottom" timestamp="1602610118560">
+    <state width="1899" height="317" key="GridCell.Tab.0.bottom" timestamp="1602689053698">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1345" height="206" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1601975180602" />
-    <state width="1899" height="318" key="GridCell.Tab.0.bottom/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610118560" />
-    <state width="1899" height="318" key="GridCell.Tab.0.center" timestamp="1602610118560">
+    <state width="1345" height="205" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1602679177191" />
+    <state width="1899" height="317" key="GridCell.Tab.0.bottom/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602689053698" />
+    <state width="1899" height="317" key="GridCell.Tab.0.center" timestamp="1602689053697">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1345" height="206" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1601975180602" />
-    <state width="1899" height="318" key="GridCell.Tab.0.center/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610118560" />
-    <state width="1899" height="318" key="GridCell.Tab.0.left" timestamp="1602610118560">
+    <state width="1345" height="205" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1602679177191" />
+    <state width="1899" height="317" key="GridCell.Tab.0.center/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602689053697" />
+    <state width="1899" height="317" key="GridCell.Tab.0.left" timestamp="1602689053697">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1345" height="206" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1601975180602" />
-    <state width="1899" height="318" key="GridCell.Tab.0.left/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610118560" />
-    <state width="1899" height="318" key="GridCell.Tab.0.right" timestamp="1602610118560">
+    <state width="1345" height="205" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1602679177191" />
+    <state width="1899" height="317" key="GridCell.Tab.0.left/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602689053697" />
+    <state width="1899" height="317" key="GridCell.Tab.0.right" timestamp="1602689053697">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1345" height="206" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1601975180602" />
-    <state width="1899" height="318" key="GridCell.Tab.0.right/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610118560" />
-    <state x="552" y="269" key="Vcs.Push.Dialog.v2" timestamp="1602269379278">
+    <state width="1345" height="205" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1602679177191" />
+    <state width="1899" height="317" key="GridCell.Tab.0.right/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602689053697" />
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2" timestamp="1602610535722">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="269" key="Vcs.Push.Dialog.v2/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602269379278" />
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610535722" />
     <state x="92" y="92" width="1736" height="896" key="dock-window-1" timestamp="1602261554662">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -201,10 +201,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="dock-window-4/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602261554663" />
-    <state x="550" y="142" width="820" height="796" key="find.popup" timestamp="1602258682414">
+    <state x="550" y="142" width="820" height="796" key="find.popup" timestamp="1602689986168">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="391" y="101" width="583" height="566" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1601395680280" />
-    <state x="550" y="142" width="820" height="796" key="find.popup/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602258682414" />
+    <state x="550" y="142" width="820" height="796" key="find.popup/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602689986168" />
   </component>
 </project>

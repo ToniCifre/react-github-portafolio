@@ -43,7 +43,7 @@ export default function ButtonMenu(props) {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
 
-    const {translator, switchTheme} = props
+    const {translator, switch_theme} = props
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -86,7 +86,7 @@ export default function ButtonMenu(props) {
                     </MenuItem>
                 </Link>
 
-                <MenuItem onClick={switchTheme}>
+                <MenuItem onClick={switch_theme}>
                     <ListItemIcon>
                         <Brightness3Icon fontSize="small" style={{color:'#fff'}}/>
                     </ListItemIcon>
@@ -100,21 +100,3 @@ export default function ButtonMenu(props) {
         </div>
     );
 }
-// <Toolbar>
-//     <ButtonMenu/>
-//     <Typography variant="h5" className={classes.whiteColor} >Toni Cifre</Typography>
-//
-//     <div  className={classes.title}>
-//         <div style={{display: 'inline-flex'}}>
-//             <Link to='/' className={classes.link}>
-//                 <Typography variant="h6" >Curriculum</Typography>
-//             </Link>
-//             <Link to='/github' className={classes.link}>
-//                 <Typography variant="h6" >Portafoli</Typography>
-//             </Link>
-//         </div>
-//     </div>
-//
-//     <ThemeSelector switchTheme={switchTheme}/>
-//     <LanguageSelector />
-// </Toolbar>

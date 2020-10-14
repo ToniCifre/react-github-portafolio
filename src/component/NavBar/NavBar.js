@@ -50,7 +50,7 @@ export default function NavBar(props) {
     const classes = useStyles();
     const [width, setWidth] = useState(window.innerWidth);
 
-    const {translator, switchTheme} = props
+    const {translator, switch_theme} = props
 
     const updateWidth = () => {
         setWidth(window.innerWidth);
@@ -67,8 +67,7 @@ export default function NavBar(props) {
             <HideOnScroll {...props}>
                 <AppBar className={classes.root}>
                     <Toolbar>
-                        {width < 630? < ButtonMenu translator={translator} switchTheme={switchTheme}/> : ''}
-
+                        {width < 630? < ButtonMenu translator={translator} switch_theme={switch_theme}/> : ''}
 
                         <Typography variant="h5" align={"center"} style={width < 630? {width: '100%'} : {}} className={classes.whiteColor} >Toni Cifre</Typography>
 
@@ -87,7 +86,7 @@ export default function NavBar(props) {
                             : ''}
                         {width >= 630?
                             <div>
-                                <ThemeSelector switchTheme={switchTheme} style={{marginRight: 15, color: '#fff'}}/>
+                                <ThemeSelector switch_theme={switch_theme} style={{marginRight: 15, color: '#fff'}}/>
                                 <LanguageSelector />
                             </div>
                             : ''}

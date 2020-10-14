@@ -1,7 +1,8 @@
 import React from 'react';
-import '../../css/loading.scss';
 
-const { PropTypes } = React;
+import '../css/loading.scss';
+
+
 const TIMER = 150; // Milliseconds between moving the next block
 const TRANSITION = .5 // Seconds to actually move one block
 const DEF_SIZE = 60; // Pixels height/width
@@ -52,6 +53,7 @@ class Loader extends React.Component {
             case 5: return 'inset(' + VAR2 + VAR1 + VAR0 + VAR1 + ' round 5%)';
             case 6: return 'inset(' + VAR2 + VAR0 + VAR0 + VAR2 + ' round 5%)';
             case 7: return 'inset(' + VAR1 + VAR0 + VAR1 + VAR2 + ' round 5%)';
+            default:  return 'inset(' + VAR1 + VAR2 + VAR1 + VAR0 + ' round 5%)';
         }
     }
     tileIndexToMove(){
@@ -64,6 +66,7 @@ class Loader extends React.Component {
             case 5: return 2;
             case 6: return 1;
             case 7: return 4;
+            default : return 7;
         }
     }
     positionForTile(radioCommand){

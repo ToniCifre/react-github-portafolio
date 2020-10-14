@@ -14,7 +14,7 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import marked from "marked";
 import {Base64} from 'js-base64';
 
-import Loader from "../component/NavBar/Loading";
+import Loader from "../component/Loading";
 import GithubRepoReadme from "../component/Github/GithubRepoReadme";
 import GithubRepoLanguages from "../component/Github/GithubRepoLanguages";
 import GithubRepoDescription from "../component/Github/GithubRepoDescription";

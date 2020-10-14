@@ -22,7 +22,6 @@ class GithubMain extends Component {
         const octokit = this.props.octokit;
 
         octokit.repos.listForAuthenticatedUser({type: 'owner', sort: 'created'}).then(value => {
-            console.log(value.data);
             this.setState({data: value.data, isLoaded: true})
         }).catch(reason => {
             console.log(reason.toString());
