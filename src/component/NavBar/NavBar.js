@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
         marginRight: theme.spacing(2),
         color: '#fff'
     },
-    title: {
+    options: {
         flexGrow: 1,
         textAlign: "center",
     },
@@ -67,12 +67,12 @@ export default function NavBar(props) {
             <HideOnScroll {...props}>
                 <AppBar className={classes.root}>
                     <Toolbar>
-                        {width < 630? < ButtonMenu translator={translator} switch_theme={switch_theme}/> : ''}
+                        {width < 630? <ButtonMenu translator={translator} switch_theme={switch_theme}/> : ''}
 
                         <Typography variant="h5" align={"center"} style={width < 630? {width: '100%'} : {}} className={classes.whiteColor} >Toni Cifre</Typography>
 
                         {width >= 630?
-                            <div  className={classes.title}>
+                            <div  className={classes.options}>
                                 <div style={{display: 'inline-flex'}}>
                                     <Link to='/' className={classes.link}>
                                         <Typography variant="h6" >{translator.resume}</Typography>

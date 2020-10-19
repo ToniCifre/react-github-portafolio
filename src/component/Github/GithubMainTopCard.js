@@ -16,8 +16,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import LockIcon from '@material-ui/icons/Lock';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-import code from "../../images/code.jpg"
-
 
 const useStyles = makeStyles({
     root: {
@@ -62,7 +60,7 @@ export default function GithubMainTopCard({data, translator }) {
                             component="img"
                             alt={data.name}
                             height="140"
-                            image={code}
+                            image={process.env.PUBLIC_URL + '/GithupRepoImages/code.jpg'}
                             title={data.name}
                             className={classes.imageMedia}
                         />

@@ -8,14 +8,18 @@ import GithubRepo from "./GithubRepo";
 import Loader from "../component/Loading";
 import GithubMain from "../component/Github/GithubMain";
 
+
 const {Octokit} = require("@octokit/rest");
 
 
 const Github = (translator) => {
     const [owner, setOwner] = useState(0);
     const [error, setError] = useState(0);
-
-    const octokit = new Octokit({auth: "537d0fd5d8dc5d58d622a0fa74a72f829b00680e",});
+    const octokit = new Octokit({auth:
+            process.env.REACT_APP_GITHUB_API_1 +
+            process.env.REACT_APP_GITHUB_API_2 +
+            process.env.REACT_APP_GITHUB_API_3 +
+            process.env.REACT_APP_GITHUB_API_4,});
 
     useEffect(() => {
         octokit.request("/user").then(value => {
@@ -49,7 +53,7 @@ const Github = (translator) => {
                         <GithubMain translator={translator} octokit={octokit}/>
                     </Route>
 
-                    <Route path="/github/:name" exact
+                    <Route path="/github/:name"
                            render={({ match }) =>
                                <GithubRepo translator={translator} octokit={octokit} owner={owner} repo={match.params.name}/>
                            } />

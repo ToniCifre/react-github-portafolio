@@ -12,7 +12,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 const ResumeAbilities = (props) => {
     const {translator} = props
     return (
-        <Box border={1} borderColor="background.darker" bgcolor="background.darker" boxShadow={2} borderRadius="20px" p={2} m={[1,3,5]} style={{paddingBottom: 30}}>
+        <Box border={1} borderColor="background.darker" bgcolor="background.darker" boxShadow={2} borderRadius="20px" p={[1, 2]} m={[1,2]} style={{paddingBottom: 30}}>
             <Typography variant="h3" gutterBottom align={"center"}>
                 {translator.title}
             </Typography>

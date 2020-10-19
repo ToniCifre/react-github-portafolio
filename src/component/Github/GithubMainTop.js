@@ -37,8 +37,7 @@ class GithubMainTop extends Component {
                     <Typography variant="h3" gutterBottom align={"center"}>
                         {translator.topRepo}
                     </Typography>
-                    <Grid container direction="row" justify="center" alignItems="stretch" spacing={3}
-                          style={{marginTop: 3}}>
+                    <Grid container direction="row" justify="center" alignItems="stretch" spacing={3} style={{marginTop: 3}}>
                         {repoList.filter(data => top_list.includes(data.name)).map((data) => (
                             <Grid item key={data.id}>
                                 <GithubMainTopCard key={data.id} data={data} translator={translator}/>

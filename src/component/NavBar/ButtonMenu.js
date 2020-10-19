@@ -9,8 +9,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
-import Brightness3Icon from "@material-ui/icons/Brightness3";
 import AssessmentIcon from '@material-ui/icons/Assessment';
+import Brightness3Icon from "@material-ui/icons/Brightness3";
 import DescriptionIcon from '@material-ui/icons/Description';
 
 import LanguageSelector from "./LanguageSelector";
@@ -33,7 +33,9 @@ const StyledMenu = ((props) => (
 ));
 
 const useStyles = makeStyles((theme) => ({
-    link: {
+    root: {
+        position: 'fixed',
+    }, link: {
         color: '#fff',
         textDecoration: 'none',
     }
@@ -54,7 +56,7 @@ export default function ButtonMenu(props) {
     };
 
     return (
-        <div>
+        <div className={classes.root}>
             <IconButton
                 aria-haspopup="true"
                 variant="contained"
@@ -86,14 +88,14 @@ export default function ButtonMenu(props) {
                     </MenuItem>
                 </Link>
 
-                <MenuItem onClick={switch_theme}>
+                <MenuItem onClick={() => {handleClose();switch_theme();}}>
                     <ListItemIcon>
                         <Brightness3Icon fontSize="small" style={{color:'#fff'}}/>
                     </ListItemIcon>
                     <ListItemText primary={translator.switch_theme} style={{color:'#fff'}}/>
                 </MenuItem>
 
-                <MenuItem>
+                <MenuItem onClick={handleClose}>
                     <LanguageSelector />
                 </MenuItem>
             </StyledMenu>

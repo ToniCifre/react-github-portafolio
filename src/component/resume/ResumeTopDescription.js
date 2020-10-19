@@ -15,11 +15,11 @@ import bg8 from '../../images/B8.jpg'
 
 const useStyles = makeStyles((theme) => ({
    bgImage: {
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        height: '100vh',
-        width: '100vw'
+       // width: '100vw',
+       height: '100vh',
+       backgroundPosition: 'center',
+       backgroundRepeat: 'no-repeat',
+       backgroundSize: 'cover'
     }, container: {
         height: '100%',
         width: '100%',

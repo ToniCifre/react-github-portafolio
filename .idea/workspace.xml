@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7bf9f99-47b4-4947-960f-54e2b4e60c9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/resume/ResumeContact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Snackbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/resume/ResumeDatabase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/resume/ResumeProgrammingLanguages.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubMainTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubMainTop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Github/GithubMainTopCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Github/GithubMainTopCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/NavBar/ButtonMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NavBar/ButtonMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/NavBar/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Loading.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NavBar/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/NavBar/ThemeSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NavBar/ThemeSelector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/resume/ResumeAbilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/resume/ResumeAbilities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/resume/ResumeAbilitiesPunctuation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/resume/ResumeAbilitiesPunctuation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/resume/ResumeContact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/resume/ResumeContact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/resume/ResumeTopDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/resume/ResumeTopDescription.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/B1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/code.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/GithupRepoImages/code.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/Github.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Github.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/GithubRepo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/GithubRepo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Resume.js" afterDir="false" />
@@ -43,27 +44,30 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component/resume" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\tonix\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\202.7660.23\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\resume" />
-      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\NavBar" />
-      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\css" />
-      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\public\GithupRepoImages" />
       <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component" />
       <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\images" />
       <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\NavBar" />
       <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\Github" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\public" />
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\resume" />
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio" />
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src" />
+      <recent name="C:\Users\tonix\WebstormProjects\react-github-portafolio\src\component\NavBar" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -72,6 +76,26 @@
       <command value="run" />
       <scripts>
         <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build:ed" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:ed" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -97,8 +121,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start1" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start1" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start1" />
+        <item itemvalue="npm.build:ed" />
         <item itemvalue="npm.eject" />
       </list>
     </recent_temporary>
@@ -117,7 +154,14 @@
       <workItem from="1602269374203" duration="21000" />
       <workItem from="1602269745322" duration="150000" />
       <workItem from="1602603859247" duration="6573000" />
-      <workItem from="1602679114588" duration="7454000" />
+      <workItem from="1602679114588" duration="7878000" />
+      <workItem from="1602768619418" duration="329000" />
+      <workItem from="1602768973930" duration="2131000" />
+      <workItem from="1602842096215" duration="48000" />
+      <workItem from="1602843587854" duration="672000" />
+      <workItem from="1602927012799" duration="1258000" />
+      <workItem from="1603021944072" duration="12136000" />
+      <workItem from="1603100586247" duration="11316000" />
     </task>
     <task id="LOCAL-00001" summary="Ready to start Resume page">
       <created>1602268740900</created>
@@ -133,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602610529320</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Best abilities and contact of resume">
+      <created>1602693465247</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602693465247</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,49 +193,54 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ready to start Resume page" />
     <MESSAGE value="Description and abilities of resume" />
-    <option name="LAST_COMMIT_MESSAGE" value="Description and abilities of resume" />
+    <MESSAGE value="Best abilities and contact of resume" />
+    <option name="LAST_COMMIT_MESSAGE" value="Best abilities and contact of resume" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="192" y="2" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601394715438">
+    <state x="192" y="2" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602768914388">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="192" y="2" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1601394715438" />
+    <state x="192" y="2" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1602768914388" />
     <state x="463" y="104" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1601394218154">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="104" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.768@0.0.1366.768" timestamp="1601394218154" />
-    <state x="576" y="21" key="CommitChangelistDialog2" timestamp="1602610528414">
+    <state x="576" y="21" key="CommitChangelistDialog2" timestamp="1602693464278">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="576" y="21" key="CommitChangelistDialog2/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610528414" />
-    <state x="463" y="154" key="FileChooserDialogImpl" timestamp="1601394230474">
+    <state x="576" y="21" key="CommitChangelistDialog2/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602693464278" />
+    <state x="463" y="154" key="FileChooserDialogImpl" timestamp="1602842141581">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="154" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1601394230474" />
-    <state width="1899" height="317" key="GridCell.Tab.0.bottom" timestamp="1602689053698">
+    <state x="463" y="154" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1602842141581" />
+    <state width="1899" height="474" key="GridCell.Tab.0.bottom" timestamp="1603124379602">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1345" height="205" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1602679177191" />
-    <state width="1899" height="317" key="GridCell.Tab.0.bottom/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602689053698" />
-    <state width="1899" height="317" key="GridCell.Tab.0.center" timestamp="1602689053697">
+    <state width="1345" height="204" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1603032197500" />
+    <state width="1899" height="474" key="GridCell.Tab.0.bottom/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1603124379602" />
+    <state width="1899" height="474" key="GridCell.Tab.0.center" timestamp="1603124379602">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1345" height="205" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1602679177191" />
-    <state width="1899" height="317" key="GridCell.Tab.0.center/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602689053697" />
-    <state width="1899" height="317" key="GridCell.Tab.0.left" timestamp="1602689053697">
+    <state width="1345" height="204" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1603032197500" />
+    <state width="1899" height="474" key="GridCell.Tab.0.center/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1603124379602" />
+    <state width="1899" height="474" key="GridCell.Tab.0.left" timestamp="1603124379602">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1345" height="205" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1602679177191" />
-    <state width="1899" height="317" key="GridCell.Tab.0.left/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602689053697" />
-    <state width="1899" height="317" key="GridCell.Tab.0.right" timestamp="1602689053697">
+    <state width="1345" height="204" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1603032197500" />
+    <state width="1899" height="474" key="GridCell.Tab.0.left/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1603124379602" />
+    <state width="1899" height="474" key="GridCell.Tab.0.right" timestamp="1603124379602">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1345" height="205" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1602679177191" />
-    <state width="1899" height="317" key="GridCell.Tab.0.right/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602689053697" />
-    <state x="552" y="269" key="Vcs.Push.Dialog.v2" timestamp="1602610535722">
+    <state width="1345" height="204" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1603032197500" />
+    <state width="1899" height="474" key="GridCell.Tab.0.right/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1603124379602" />
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2" timestamp="1602693467590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="269" key="Vcs.Push.Dialog.v2/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602610535722" />
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602693467590" />
+    <state x="501" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602769003904">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="501" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1602769003904" />
     <state x="92" y="92" width="1736" height="896" key="dock-window-1" timestamp="1602261554662">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -201,10 +257,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="dock-window-4/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602261554663" />
-    <state x="550" y="142" width="820" height="796" key="find.popup" timestamp="1602689986168">
+    <state x="550" y="142" width="820" height="796" key="find.popup" timestamp="1603124517064">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="391" y="101" width="583" height="566" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1601395680280" />
-    <state x="550" y="142" width="820" height="796" key="find.popup/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1602689986168" />
+    <state x="550" y="142" width="820" height="796" key="find.popup/1920.524.1366.768/0.0.1920.1080@0.0.1920.1080" timestamp="1603124517064" />
   </component>
 </project>

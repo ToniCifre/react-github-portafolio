@@ -71,7 +71,6 @@ class GithubRepo extends Component {
 
     render() {
         let { error } = this.state;
-
         const {translator} = this.props.translator;
 
         if (error){
@@ -108,15 +107,15 @@ class GithubRepo extends Component {
                     {!isLoadedLanguages || !isLoadedReadme ? <Loader {...{size: 200, center: true}} /> : null}
 
 
-                    <Grid container alignItems="stretch" spacing={[1, 2, 3]} style={{marginBottom: 8}}>
-                        <Grid item xs={12} sm={2} md={1} zeroMinWidth={true} style={{display: 'flex'}}>
-                            <IconButton aria-label="Back" style={{margin: 'auto'}}>
+                    <Grid container alignItems="stretch" spacing={3} style={{marginBottom: 8}}>
+                        <Grid item sm={1} md={1} zeroMinWidth={true} style={{display: 'flex'}}>
+                            <IconButton aria-label="Back">
                                 <Link to='/github' style={{height: 24, width:24, color:'inherit'}}>
                                     <ArrowBackIcon />
                                 </Link>
                             </IconButton>
                         </Grid>
-                        <Grid item xs={12} sm={10} md={8} zeroMinWidth={true}>
+                        <Grid item sm={11} md={8} zeroMinWidth={true}>
                             <Typography variant="h3" component="h4" gutterBottom>
                                 {this.props.repo}
                             </Typography>

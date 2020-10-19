@@ -37,14 +37,23 @@ code {
     .MuiGrid-spacing-xs-3 {
          width: 100% !important;
          margin: 0!important;
+    }.MuiGrid-spacing-xs-2 {
+         width: 100% !important;
+         margin: 0!important;
+    }.MuiGrid-spacing-xs-5 {
+         width: 100% !important;
+         margin: 0!important;
     }
+
 }
 
-.MuiPaper-root.MuiMenu-paper.MuiPopover-paper {
+.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation0.MuiPaper-rounded {
     background-color: #000000d4 !important;
 }
 
-
+.markdown-body .highlight pre, .markdown-body pre {
+    background-color: #afafaf52 !important;
+}
 
 /*@media (prefers-reduced-motion: no-preference) {*/
 /*  .App-logo {*/
