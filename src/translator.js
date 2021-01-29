@@ -20,14 +20,9 @@ export const translations = {
         "private": "Private",
 
         "repoDescription": {
-          "Erlang_Chat":" ddfjgk dflkjhg sdfj gsljdhf pgsudp sjnvsfdbv  cbfghñsh rfishsgs fdljgksh dfljg" +
-              "dfogis hdrgwkjrhgoxk jcvhldfknbvjgd fsd gsfdl jgs",
-          "GameBoyJs":"jgk hsofdhgpsdhf`gsh fdòb s`fogs ìofd gpsfhd vsf" +
-              " s`fdg sodfhvxcbpuxfj ngñdfj gpdhf b" +
-              "sf gpsfdh vpx",
-          "HexGame":"gkjd hflgksh fdghsdfj gskjh fpghs pfidhg sdfjkngs fhgs`f gsfdpgkjs hfkñjghspfdug hsp" +
-              "foig hsdifgsjfdg sñdfhñsf gñshdfghp isuha`sgñjfdnvpdfgjsnñfgsfdl hgsfdg" +
-              "sfhusgfouishdfpgshfdpk vhspghsfv"
+          "REIN":"Current subject of Information Recovery. With indexing tools, Elasticsearch and web scraping to be " +
+              "able to obtain, save and search the information in the most efficient way possible",
+          "HexGame":""
         },
 
         "table": {
@@ -102,10 +97,11 @@ export const translations = {
         "contact": {
           "title": "Contact",
           "contactList": [
-            ['mail', 'tonicifrev@gmail.com', 'mailto:tonicifrev@gmail.com'],
+            ['mail', 'tonicifrev@gmail.com'],
             ['github', '@ToniCifre', 'https://github.com/ToniCifre'],
             ['phone', '+34651173909'],
-            ['linkedin', 'toni-cifre', 'https://www.linkedin.com/in/toni-cifre/']
+            ['linkedin', 'toni-cifre', 'https://www.linkedin.com/in/toni-cifre/'],
+            ['cv', 'Download CV', 'CV-AntoniCifreVicens.pdf']
           ]
         }
       }
@@ -128,10 +124,8 @@ export const translations = {
         "private": "Privado",
 
         "repoDescription": {
-          "Erlang_Chat":"dlu spdfig pifdgpsu dfpighspifdgspifpvsig fdvglcvs",
-          "GameBoyJs":"sñdfh gpsdhfpgsfis`fdoihvsg òrehgñkjzfdnvg lwerufhqpdlgjhsdf" +
-              "g spdfuig hwprefñsandñcvjk hzpdfg sh`gosdfhnbs" +
-              "fgspfdkjhvsdfñ",
+          "REIN":"Actual asignatura de Recuperación de la información. Con las herramientas de indexación, " +
+              "Elasticsearch y scraping web para poder obtener, guardar y buscar la información de manera más eficaz posible",
           "HexGame":"fklu hgspfdlk jgspdfu hgspiufha`sdfhlskfdj vhoxcuvbs fdg" +
               "sfdvpjhzxlvkjhxfouw ghoruthfuhvsfdlgk jshfg" +
               "sfd gosfud"
@@ -154,11 +148,11 @@ export const translations = {
         "abilities": {
           "title": "Habilidades",
           "abilitiesList": [['Gestión de Proyectos', 3], ['Desarrollo de Software', 4], ['Front End', 3], ['Back End', 4],
-            ['Aprendizaje Autonomo', 4], ['Bases de Datos', 3], ['Metodología Ágil', 3]]
+            ['Aprendizaje Autónomo', 4], ['Bases de Datos', 3], ['Metodología Ágil', 3]]
         },
         "languages": {
           "title": "Lenguajes de programación",
-          "description": "Fácil aprendizaje de otros lenguajes al tener solidas las bases lógicas de la programación.",
+          "description": "Fácil aprendizaje de otros lenguajes al tener sólidas las bases lógicas de la programación.",
           "languagesList":[
             ['Java',
               [
@@ -199,7 +193,7 @@ export const translations = {
         },
         "database": {
           "title": "Bases de Datos",
-          "description": "Analisis de la eficiencia en diferentes sistemas de bases de datos y tipos de consultas." +
+          "description": "Análisis de la eficiencia en diferentes sistemas de bases de datos y tipos de consultas." +
               "Conocimiento de varios framework para la manipulación de bases de datos como Hibernate (Java), Django (Python) y mongoose (Node.Js).",
           "databaseList":[
             ['BD relacionales:', 'Creación, análisis y optimización en MySQL Y PostgreSQL.'],
@@ -209,10 +203,11 @@ export const translations = {
         "contact": {
           "title": "Contacto",
           "contactList": [
-            ['mail', 'tonicifrev@gmail.com', 'mailto:tonicifrev@gmail.com'],
+            ['mail', 'tonicifrev@gmail.com'],
             ['github', '@ToniCifre', 'https://github.com/ToniCifre'],
             ['phone', '+34651173909'],
-            ['linkedin', 'toni-cifre', 'https://www.linkedin.com/in/toni-cifre/']
+            ['linkedin', 'toni-cifre', 'https://www.linkedin.com/in/toni-cifre/'],
+            ['cv', 'Descarga CV', 'CV-AntoniCifreVicens.pdf']
           ]
         }
       }
@@ -236,10 +231,9 @@ export const translations = {
         "private": "Privat",
 
         "repoDescription": {
-          "Erlang_Chat":"dlu spdfig pifdgpsu dfpighspifdgspifpvsig fdvglcvs",
-          "GameBoyJs":"sñdfh gpsdhfpgsfis`fdoihvsg òrehgñkjzfdnvg lwerufhqpdlgjhsdf" +
-              "g spdfuig hwprefñsandñcvjk hzpdfg sh`gosdfhnbs" +
-              "fgspfdkjhvsdfñ",
+          "REIN":"Actual assignatura de Recuperació de la informació. Amb les eines d'indexació, Elasticsearch i " +
+              "scraping web podem obtenir, guardar i buscar la informació de manera més eficaç possible.",
+
           "HexGame":"fklu hgspfdlk jgspdfu hgspiufha`sdfhlskfdj vhoxcuvbs fdg" +
               "sfdvpjhzxlvkjhxfouw ghoruthfuhvsfdlgk jshfg" +
               "sfd gosfud"
@@ -266,7 +260,7 @@ export const translations = {
         },
         "languages": {
           "title": "Llenguatges de programació",
-          "description": "Fàcil aprenentatge d'altres llenguatges a l'tenir sòlides les bases lògiques de la programació.",
+          "description": "Fàcil aprenentatge d'altres llenguatges al tenir sòlides les bases lògiques de la programació.",
           "languagesList":[
             ['Java',
               [
@@ -281,8 +275,6 @@ export const translations = {
             ],
             ['Python',
               [
-                ['- Automatización de múltiples tareas: monitorización de recursos y análisis y recopilación de información con scraping...'],
-                ['- Multithreading'],
                 ["- Implementació d'intel·ligència artificial: Reinforcement Learning i Deep Learning amb TensorFlow, keras i OpenCV."],
                 ['- Mineria de dades amb Jupyter Notebook.'],
                 ['- Recuperació de la informació amb elasticsearch.'],
@@ -319,10 +311,12 @@ export const translations = {
         "contact": {
           "title": "Contacte",
           "contactList": [
-              ['mail', 'tonicifrev@gmail.com', 'mailto:tonicifrev@gmail.com'],
+              ['mail', 'tonicifrev@gmail.com'],
               ['github', '@ToniCifre', 'https://github.com/ToniCifre'],
               ['phone', '+34651173909'],
-              ['linkedin', 'toni-cifre', 'https://www.linkedin.com/in/toni-cifre/']]
+              ['linkedin', 'toni-cifre', 'https://www.linkedin.com/in/toni-cifre/'],
+              ['cv', 'Descarregar CV', 'CV-AntoniCifreVicens.pdf']
+          ]
         }
       }
     }

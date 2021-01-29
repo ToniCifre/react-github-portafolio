@@ -9,11 +9,12 @@ import MailIcon from '@material-ui/icons/Mail';
 import PhoneIcon from '@material-ui/icons/Phone';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import DescriptionIcon from '@material-ui/icons/Description';
 
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import Link from "@material-ui/core/Link";
+import useGAEventTracker from "../../useGAEventTracker";
 
 
 const selectIcon = (contact) =>{
@@ -23,12 +24,14 @@ const selectIcon = (contact) =>{
         case 'phone': return <PhoneIcon/>;
         case 'linkedin': return <LinkedInIcon/>;
         case 'web': return <WebIcon />;
+        case 'cv': return <DescriptionIcon />;
         default : return '';
     }
 }
 const ResumeContact = (props) => {
     const {translator} = props
 
+    const GAEventTaker = useGAEventTracker("GithubVisit");
 
 
     return (
@@ -39,12 +42,25 @@ const ResumeContact = (props) => {
             <Grid container justify="center" spacing={3} style={{marginTop: 3}}>
                 {translator.contactList.map((data,index) => (
                     <Grid item key={index} style={{ display: 'inline' , marginRight: '7px'}}>
-                        <ListItem button component='a' href={data[2]}>
-                            <ListItemIcon>
-                                {selectIcon(data[0])}
-                            </ListItemIcon>
-                            <ListItemText primary={data[1]} />
-                        </ListItem>
+
+                        {data[2] ?
+                            <ListItem button component='a' href={data[2]} onClick={(e) => GAEventTaker("ClickContact", data[0])}>
+                                <ListItemIcon>
+                                    {selectIcon(data[0])}
+                                </ListItemIcon>
+                                <ListItemText primary={data[1]} />
+                            </ListItem>
+                            :
+                            <ListItem onSelect={(e) => GAEventTaker("SelectContact", data[0])}>
+                                <ListItemIcon>
+                                    {selectIcon(data[0])}
+                                </ListItemIcon>
+                                <ListItemText primary={data[1]} />
+                            </ListItem>
+                        }
+
+
+
                     </Grid>
                 ))}
             </Grid>

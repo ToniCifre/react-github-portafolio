@@ -34,15 +34,16 @@ class GithubMain extends Component {
 
         if (error !== '') {
             return (
-                <Alert severity="error" style={{borderRadius:20}}>
-                    <AlertTitle>Error</AlertTitle>
-                    {error}
-                </Alert>
+                <Container maxWidth={"md"}>
+                    <Alert severity="error" style={{borderRadius:20}}>
+                        <AlertTitle>Error</AlertTitle>
+                        {error}
+                    </Alert>
+                </Container>
             )
         }else {
             const {data} = this.state;
-            const {translator} = this.props.translator;
-
+            const {translator} = this.props;
 
             return (
                 <Container maxWidth={"lg"} style={{marginTop: 25, marginBottom: 25}}>

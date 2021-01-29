@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import './css/App.css';
 import App from './App';
 
-import {translations} from "./translator";
+import { translations } from "./translator";
 import { TranslationsProvider } from 'context-multi-language';
 
 

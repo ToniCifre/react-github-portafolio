@@ -24,6 +24,7 @@ import ChevronRight from '@material-ui/icons/ChevronRight';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 
 import {Link} from "react-router-dom";
+import useGAEventTracker from "../../useGAEventTracker";
 
 class GithubMainTable extends Component {
 
@@ -40,6 +41,8 @@ class GithubMainTable extends Component {
             )
         } else {
             const {translator} = this.props;
+            const GAEventTaker = useGAEventTracker("GithubVisit");
+
             const tableIcons = {
                 DetailPanel: forwardRef((props, ref) => <ChevronRight {...props} ref={ref}/>),
                 FirstPage: forwardRef((props, ref) => <FirstPage {...props} ref={ref}/>),
@@ -75,12 +78,12 @@ class GithubMainTable extends Component {
                             </div>) :
                             (<div>
                                 <Tooltip title={translator.openRepo}>
-                                    <Link to={'/github/'+rowData.name} style={{color: 'currentcolor', marginRight:10}}>
+                                    <Link to={'/github/'+rowData.name} style={{color: 'currentcolor', marginRight:10}} onClick={(e) => GAEventTaker("RepoVisited", rowData.name)}>
                                         <OpenRepoIcon href={rowData.name}/>
                                     </Link>
                                 </Tooltip>
                                 <Tooltip title={translator.viewGithub}>
-                                    <a href={rowData.html_url} style={{color: 'currentcolor'}}>
+                                    <a href={rowData.html_url} style={{color: 'currentcolor'}} onClick={(e) => GAEventTaker("GithubRepoVisited", rowData.name)}>
                                         <GitHubIcon href={rowData.html_url}/>
                                     </a>
                                 </Tooltip>

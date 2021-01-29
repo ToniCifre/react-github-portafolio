@@ -39,7 +39,7 @@ const ResumeTopDescription = (props) => {
     const {description} = props
 
     const bgImages = [bg2, bg3, bg4, bg5, bg6, bg7, bg8]
-    const bgSelected = Math.floor(Math.random() * 8)
+    const bgSelected = Math.floor(Math.random() * 7)
 
     return (
     <div className={classes.bgImage} style={{backgroundImage: `url(${bgImages[bgSelected]})`}}>

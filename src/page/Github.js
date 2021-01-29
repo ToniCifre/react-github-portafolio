@@ -1,51 +1,20 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-import Container from "@material-ui/core/Container";
-import {Alert, AlertTitle} from "@material-ui/lab";
-
-import GithubRepo from "./GithubRepo";
-import Loader from "../component/Loading";
+import GithubRepo from "../component/Github/GithubRepo";
 import GithubMain from "../component/Github/GithubMain";
-
 
 const {Octokit} = require("@octokit/rest");
 
 
 const Github = (translator) => {
-    const [owner, setOwner] = useState(0);
-    const [error, setError] = useState(0);
     const octokit = new Octokit({auth:
             process.env.REACT_APP_GITHUB_API_1 +
             process.env.REACT_APP_GITHUB_API_2 +
             process.env.REACT_APP_GITHUB_API_3 +
             process.env.REACT_APP_GITHUB_API_4,});
 
-    useEffect(() => {
-        octokit.request("/user").then(value => {
-            setOwner(value.data.login);
-        }).catch(reason => {
-            console.log(reason.toString());
-            if(reason.toString() === 'HttpError: Bad credentials'){
-                setError("Bad credentials.\nGithub API key is wrong.");
-            }else{
-                setError(reason.toString());
-            }
-        });
-    }, []);
-
-
-    if (error){
-        return (
-            <Container maxWidth={"md"}>
-                    <Alert severity="error" style={{borderRadius:20}}>
-                        <AlertTitle>Error</AlertTitle>
-                        {error}
-                    </Alert>
-            </Container>
-        )
-    }else if (owner){
-        return (
+    return (
             <Router>
                 <Switch>
 
@@ -55,15 +24,11 @@ const Github = (translator) => {
 
                     <Route path="/github/:name"
                            render={({ match }) =>
-                               <GithubRepo translator={translator} octokit={octokit} owner={owner} repo={match.params.name}/>
+                               <GithubRepo translator={translator} octokit={octokit} repo={match.params.name}/>
                            } />
 
                 </Switch>
             </Router>
         )
-    }else {
-        return <Loader {...{size: 200, center: true}} />
-    }
-
 };
 export default Github;

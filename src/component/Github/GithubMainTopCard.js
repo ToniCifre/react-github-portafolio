@@ -5,7 +5,6 @@ import Box from '@material-ui/core/Box';
 import Card from '@material-ui/core/Card';
 import Chip from '@material-ui/core/Chip';
 import Button from '@material-ui/core/Button';
-import Skeleton from '@material-ui/lab/Skeleton';
 import {makeStyles} from '@material-ui/core/styles';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
@@ -15,6 +14,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 
 import LockIcon from '@material-ui/icons/Lock';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import useGAEventTracker from "../../useGAEventTracker";
 
 
 const useStyles = makeStyles({
@@ -23,12 +23,6 @@ const useStyles = makeStyles({
     },
     icon: {
         marginRight: 10
-    },
-    skeletonMedia: {
-        width: 335,
-        height: 175,
-        margin: 5,
-        borderRadius: 5,
     },
     imageMedia: {
         height: 175,
@@ -47,14 +41,14 @@ const useStyles = makeStyles({
     }
 });
 
-export default function GithubMainTopCard({data, translator }) {
+export default function GithubMainTopCard({data, translator}) {
     const classes = useStyles();
+    const GAEventTaker = useGAEventTracker("GithubVisit");
 
     return (
         <Card className={classes.root} bgcolor="textPrimary">
-            <Link to={'/github/'+data.name} className={classes.link}>
-            <CardActionArea>
-                {data ?
+            <Link to={'/github/' + data.name} className={classes.link} onClick={(e) => GAEventTaker("RepoVisited", data.name)}>
+                <CardActionArea>
                     <Box boxShadow={3} className={classes.boxMedia}>
                         <CardMedia
                             component="img"
@@ -65,62 +59,29 @@ export default function GithubMainTopCard({data, translator }) {
                             className={classes.imageMedia}
                         />
                     </Box>
-
-                    :
-                    <Skeleton animation="wave" variant="rect" className={classes.skeletonMedia}/>
-                }
-                <CardContent>
-                    {data ?
-                        (
-                            <React.Fragment>
-                                <Typography gutterBottom variant="h5" color="textPrimary">
-                                    {data.name}
-                                </Typography>
-                                <Typography variant="body2" color="textSecondary">
-                                    {translator.repoDescription[data.name]}
-                                </Typography>
-                            </React.Fragment>
-                        ) : (
-                            <React.Fragment>
-                                <Typography gutterBottom variant="h5">
-                                    <Skeleton/>
-                                </Typography>
-                                <Typography variant="body2">
-                                    <Skeleton/>
-                                    <Skeleton/>
-                                    <Skeleton/>
-                                </Typography>
-                            </React.Fragment>
-                        )
-                    }
-                </CardContent>
-            </CardActionArea>
+                    <CardContent>
+                        <React.Fragment>
+                            <Typography gutterBottom variant="h5" color="textPrimary">
+                                {data.name}
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary">
+                                {translator.repoDescription[data.name]}
+                            </Typography>
+                        </React.Fragment>
+                    </CardContent>
+                </CardActionArea>
             </Link>
             <CardActions>
-                {data ? (
-                    <React.Fragment>
-
-                        {data.private ?
-                            <Chip icon={<LockIcon/>}
-                                  label={translator.private}
-                                  variant="outlined"/>
-                            :
-                            <Button size="small" href={data.html_url}>
-                                <GitHubIcon className={classes.icon}/>
-                                {translator.viewGithub}
-                            </Button>
-                        }
-                    </React.Fragment>
-                ) : (
-                    <React.Fragment>
-                        <Skeleton variant="circle">
+                <React.Fragment>
+                    {data.private ?
+                        <Chip icon={<LockIcon/>} label={translator.private} variant="outlined"/>
+                        :
+                        <Button size="small" href={data.html_url} onClick={(e) => GAEventTaker("GithubRepoVisited", data.name)}>
                             <GitHubIcon className={classes.icon}/>
-                        </Skeleton>
-                        <Skeleton width="50%">
-                            <Typography>.</Typography>
-                        </Skeleton>
-                    </React.Fragment>
-                )}
+                            {translator.viewGithub}
+                        </Button>
+                    }
+                </React.Fragment>
             </CardActions>
         </Card>
     )

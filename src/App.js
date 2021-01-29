@@ -1,24 +1,28 @@
 import React, {useState} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-import Helmet from "react-helmet";
+import ReactGA from 'react-ga';
 
 import Toolbar from "@material-ui/core/Toolbar";
-import {ThemeProvider} from "@material-ui/styles";
+import { ThemeProvider } from "@material-ui/styles";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 
 import {useTranslations} from 'context-multi-language';
 
-import Resume from "./page/Resume";
+import SEO from "./component/SEO";
 import Github from "./page/Github";
-import NavBar from "./component/NavBar/NavBar";
+import Resume from "./page/Resume";
 import Loader from "./component/Loading";
+import NavBar from "./component/NavBar/NavBar";
 import CustomizedSnackbar from "./component/Snackbars";
+import GithubMain from "./component/Github/GithubMain";
+import GithubRepo from "./component/Github/GithubRepo";
 
+ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+const {Octokit} = require("@octokit/rest");
 
 const App = () => {
     const {t} = useTranslations();
-
 
     const [darkState, setDarkState] = useState(false);
     const palletType = darkState ? "dark" : "light";
@@ -37,44 +41,33 @@ const App = () => {
     }
 
     if (Object.entries(t).length !== 0) {
+        const octokit = new Octokit({auth:
+                process.env.REACT_APP_GITHUB_API_1 +
+                process.env.REACT_APP_GITHUB_API_2 +
+                process.env.REACT_APP_GITHUB_API_3 +
+                process.env.REACT_APP_GITHUB_API_4,});
         return (
             <main>
-                <Helmet>
-                    {/*{!--HTML Meta Tags --}*/}
-                    <title>Toni Cifre Portfolio</title>
-                    <meta name="description" content="Curriculum vitae y portfolio web de Toni Cifre creado con React, Material-UI y Github-API"/>
-                    {/*{!--Google / Search Engine Tags --}*/}
-                    <meta itemprop="name" content="Toni Cifre Portfolio"/>
-                    <meta itemprop="description" content="Curriculum vitae y portfolio web de Toni Cifre creado con React, Material-UI y Github-API"/>
-                    <meta itemprop="image" content=""/>
-
-                    {/*{!--Facebook Meta Tags --}*/}
-                    <meta property="og:url" content="tonicifre.com"/>
-                    <meta property="og:type" content="website"/>
-                    <meta property="og:title" content="Toni Cifre Portfolio"/>
-                    <meta property="og:description" content="Curriculum vitae y portfolio web de Toni Cifre creado con React, Material-UI y Github-API"/>
-                    <meta property="og:image" content=""/>
-
-                    {/*{!--Twitter Meta Tags --}*/}
-                    <meta name="twitter:card" content="summary_large_image"/>
-                    <meta name="twitter:title" content="Toni Cifre Portfolio"/>
-                    <meta name="twitter:description" content="Curriculum vitae y portfolio web de Toni Cifre creado con React, Material-UI y Github-API"/>
-                    <meta name="twitter:image" content=""/>
-
-                </Helmet>
-
+                <SEO/>
                 <ThemeProvider theme={darkTheme}>
                     <div className="App">
                         <Router>
-                            <CustomizedSnackbar message={"Esta página aún está en progreso"}/>
+                            <CustomizedSnackbar message={"Esta página aún está en progreso"} time={6000} severity='info'/>
                             <NavBar translator={t.navBar} switch_theme={switch_theme}/>
 
                             <Switch>
-                                <Route path="/github">
-                                    <Toolbar />
-                                    <Github translator={t.github}/>
+                                {/*<Route path="/github">*/}
+                                {/*    <Toolbar/>*/}
+                                {/*    <Github translator={t.github}/>*/}
+                                {/*</Route>*/}
+                                <Route exact path="/github">
+                                    <GithubMain translator={t.github} octokit={octokit}/>
                                 </Route>
 
+                                <Route path="/github/:name"
+                                       render={({ match }) =>
+                                           <GithubRepo translator={t.github} octokit={octokit} repo={match.params.name}/>
+                                       } />
                                 <Route exact path="/">
                                     <Resume translator={t.resume}/>
                                 </Route>
@@ -91,7 +84,6 @@ const App = () => {
         );
     } else {
         return <ThemeProvider theme={darkTheme}> <Loader {...{size: 200, center: true}} />; </ThemeProvider>
-
     }
 };
 
