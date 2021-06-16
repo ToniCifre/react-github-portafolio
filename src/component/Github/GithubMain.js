@@ -46,7 +46,7 @@ class GithubMain extends Component {
             const {translator} = this.props;
 
             return (
-                <Container maxWidth={"lg"} style={{marginTop: 25, marginBottom: 25}}>
+                <Container maxWidth={"lg"} style={{marginTop: 85, marginBottom: 25}}>
                     <GithubMainTop translator={translator} repoList={data}/>
                     <GithubMainTable translator={translator} repoList={data}/>
                 </Container>

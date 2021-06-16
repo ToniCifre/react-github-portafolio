@@ -54,3 +54,11 @@ code {
 .markdown-body .highlight pre, .markdown-body pre {
     background-color: #afafaf52 !important;
 }
+
+.MuiListItem-multilist {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+    display: inline-flex !important;
+    max-width:350px !important;
+    vertical-align: middle;
+}

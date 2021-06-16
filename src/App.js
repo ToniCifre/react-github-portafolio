@@ -1,16 +1,13 @@
 import React, {useState} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-import ReactGA from 'react-ga';
 
-import Toolbar from "@material-ui/core/Toolbar";
 import { ThemeProvider } from "@material-ui/styles";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 
 import {useTranslations} from 'context-multi-language';
 
 import SEO from "./component/SEO";
-import Github from "./page/Github";
 import Resume from "./page/Resume";
 import Loader from "./component/Loading";
 import NavBar from "./component/NavBar/NavBar";
@@ -18,7 +15,8 @@ import CustomizedSnackbar from "./component/Snackbars";
 import GithubMain from "./component/Github/GithubMain";
 import GithubRepo from "./component/Github/GithubRepo";
 
-ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+require('dotenv').config()
+
 const {Octokit} = require("@octokit/rest");
 
 const App = () => {
@@ -56,10 +54,6 @@ const App = () => {
                             <NavBar translator={t.navBar} switch_theme={switch_theme}/>
 
                             <Switch>
-                                {/*<Route path="/github">*/}
-                                {/*    <Toolbar/>*/}
-                                {/*    <Github translator={t.github}/>*/}
-                                {/*</Route>*/}
                                 <Route exact path="/github">
                                     <GithubMain translator={t.github} octokit={octokit}/>
                                 </Route>

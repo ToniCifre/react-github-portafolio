@@ -7,7 +7,7 @@ const ThemeSelector = (props) => {
     const {switch_theme} = props
 
     return (
-        <IconButton aria-label="switch Theme" onClick={switch_theme}  {...props}>
+        <IconButton aria-label="switch Theme" onClick={switch_theme} style={{marginRight: 15, color: '#fff'}}>
             <Brightness3Icon />
         </IconButton>
     );

@@ -7,11 +7,11 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "context-multi-language": "^1.0.15",
     "github-markdown-css": "^4.0.0",
     "js-base64": "^3.5.2",
-    "marked": "^1.2.0",
+    "marked": "^2.0.7",
     "material-table": "^1.69.1",
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
@@ -19,7 +19,7 @@
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-router": "^5.2.0",
-    "react-scripts": "^3.4.3"
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,7 +46,8 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.10.0",
     "@octokit/rest": "^18.0.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
     "notistack": "^1.0.1",
     "react-ga": "^3.2.0",
     "react-router-dom": "^5.2.0"

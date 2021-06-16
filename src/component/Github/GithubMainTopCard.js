@@ -14,7 +14,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 
 import LockIcon from '@material-ui/icons/Lock';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import useGAEventTracker from "../../useGAEventTracker";
 
 
 const useStyles = makeStyles({
@@ -43,11 +42,10 @@ const useStyles = makeStyles({
 
 export default function GithubMainTopCard({data, translator}) {
     const classes = useStyles();
-    const GAEventTaker = useGAEventTracker("GithubVisit");
 
     return (
         <Card className={classes.root} bgcolor="textPrimary">
-            <Link to={'/github/' + data.name} className={classes.link} onClick={(e) => GAEventTaker("RepoVisited", data.name)}>
+            <Link to={'/github/' + data.name} className={classes.link} >
                 <CardActionArea>
                     <Box boxShadow={3} className={classes.boxMedia}>
                         <CardMedia
@@ -76,7 +74,7 @@ export default function GithubMainTopCard({data, translator}) {
                     {data.private ?
                         <Chip icon={<LockIcon/>} label={translator.private} variant="outlined"/>
                         :
-                        <Button size="small" href={data.html_url} onClick={(e) => GAEventTaker("GithubRepoVisited", data.name)}>
+                        <Button size="small" href={data.html_url} >
                             <GitHubIcon className={classes.icon}/>
                             {translator.viewGithub}
                         </Button>

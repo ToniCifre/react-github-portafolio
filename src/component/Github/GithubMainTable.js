@@ -24,7 +24,6 @@ import ChevronRight from '@material-ui/icons/ChevronRight';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 
 import {Link} from "react-router-dom";
-import useGAEventTracker from "../../useGAEventTracker";
 
 class GithubMainTable extends Component {
 
@@ -41,8 +40,6 @@ class GithubMainTable extends Component {
             )
         } else {
             const {translator} = this.props;
-            const GAEventTaker = useGAEventTracker("GithubVisit");
-
             const tableIcons = {
                 DetailPanel: forwardRef((props, ref) => <ChevronRight {...props} ref={ref}/>),
                 FirstPage: forwardRef((props, ref) => <FirstPage {...props} ref={ref}/>),
@@ -63,31 +60,27 @@ class GithubMainTable extends Component {
                 {title: 'html_url', field: 'html_url', hidden: true, grouping: false},
                 {
                     title: translator.table.actions, field: 'private', type: 'boolean',
-                    cellStyle: {textAlign: "right"},
+                    headerStyle: {textAlign: "right"},
+                    cellStyle: {textAlign: "right",},
                     render: rowData => (
-                        rowData.private ?
-                            (<div>
-                                <Tooltip title={translator.openRepo}>
-                                    <Link to={'/github/'+rowData.name} style={{color: 'currentcolor', marginRight:10}}>
-                                        <OpenRepoIcon href={rowData.name}/>
-                                    </Link>
-                                </Tooltip>
-                                <Tooltip title={translator.private}>
+                        <div>
+                            <Tooltip title={translator.openRepo}>
+                                <Link to={'/github/'+rowData.name} style={{color: 'currentcolor', marginRight:10}}>
+                                    <OpenRepoIcon href={rowData.name}/>
+                                </Link>
+                            </Tooltip>
+                            <Tooltip title={translator.private}>
+                                {rowData.private ?
                                     <LockIcon/>
-                                </Tooltip>
-                            </div>) :
-                            (<div>
-                                <Tooltip title={translator.openRepo}>
-                                    <Link to={'/github/'+rowData.name} style={{color: 'currentcolor', marginRight:10}} onClick={(e) => GAEventTaker("RepoVisited", rowData.name)}>
-                                        <OpenRepoIcon href={rowData.name}/>
-                                    </Link>
-                                </Tooltip>
-                                <Tooltip title={translator.viewGithub}>
-                                    <a href={rowData.html_url} style={{color: 'currentcolor'}} onClick={(e) => GAEventTaker("GithubRepoVisited", rowData.name)}>
+                                    :
+                                    <a href={rowData.html_url} style={{color: 'currentcolor'}} >
                                         <GitHubIcon href={rowData.html_url}/>
                                     </a>
-                                </Tooltip>
-                            </div>)
+                                }
+                            </Tooltip>
+                        </div>
+
+
 
                     )
                 }
@@ -103,8 +96,13 @@ class GithubMainTable extends Component {
                         columns={columns}
                         data={repoList}
                         icons={tableIcons}
-                        options={{grouping: true}}
-                        style={{borderRadius: 20}}
+                        options={{grouping: true,
+                            headerStyle: {
+                                fontSize: '1.1em',
+                                fontWeight: 'bold'
+                            }}}
+
+                        style={{borderRadius: 20, margin:'2vw', paddingBottom:15}}
                         detailPanel={
                             [{
                                 tooltip: translator.table.showDesc,

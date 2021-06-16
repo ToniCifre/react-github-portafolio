@@ -1,13 +1,30 @@
 import React from 'react';
 
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
-import {Box} from "@material-ui/core";
+import {Box, Typography} from "@material-ui/core";
 
-import ResumeAbilitiesPunctuation from "./ResumeAbilitiesPunctuation";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
+import {List, ListItem, ListItemIcon, ListItemText} from "@material-ui/core";
+
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
+
+const ResumeAbilitiesPunctuation = (props) => {
+    const {points} = props
+    const maxPunctiation = 4
+
+    let punctuation = []
+    for (let i = 0; i < points && i < maxPunctiation; i++) {
+        punctuation.push(<FiberManualRecordIcon key={i} style={{ fontSize: 17 }}/>)
+    }
+    for (let i = points; i < maxPunctiation; i++) {
+        punctuation.push(<FiberManualRecordIcon key={i} color="disabled" style={{ fontSize: 17 }}/>);
+    }
+
+    return (
+        <div style={{ display: 'inline-block' }}>
+            {punctuation}
+        </div>
+    )
+};
+
 
 const ResumeAbilities = (props) => {
     const {translator} = props
@@ -16,19 +33,16 @@ const ResumeAbilities = (props) => {
             <Typography variant="h3" gutterBottom align={"center"}>
                 {translator.title}
             </Typography>
-            <Grid container justify="center" spacing={3} style={{marginTop: 3}}>
+            <List container justify="center" spacing={3} style={{marginTop: '3vh', marginBottom: '2vh', textAlign: 'center'}} >
                 {translator.abilitiesList.map((data, index) => (
-                    <Grid item key={index} style={{ display: 'inline' , marginRight: '7px'}}>
-                        <ListItem>
-                            <ListItemText primary={data[0]+':'}/>
-                            <ListItemIcon><ResumeAbilitiesPunctuation points={data[1]}/></ListItemIcon>
-                        </ListItem>
-                    </Grid>
+                    <ListItem key={index} className={'MuiListItem-multilist'}>
+                        <ListItemText primary={data[0]+':'} />
+                        <ListItemIcon> <ResumeAbilitiesPunctuation points={data[1]}/> </ListItemIcon>
+                    </ListItem>
                 ))}
-            </Grid>
+            </List>
         </Box>
     )
-
-
 };
+
 export default ResumeAbilities;

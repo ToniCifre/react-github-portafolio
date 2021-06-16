@@ -10,25 +10,25 @@ const SEO = () => {
                   content="Curriculum vitae y portfolio web de Toni Cifre creado con React, Material-UI y Github-API"/>
 
             {/*{!--Google / Search Engine Tags --}*/}
-            <meta itemprop="name" content="Toni Cifre Portfolio"/>
-            <meta itemprop="description"
+            <meta itemProp="name" content="Toni Cifre Portfolio"/>
+            <meta itemProp="description"
                   content="Curriculum vitae y portfolio web de Toni Cifre creado con React, Material-UI y Github-API"/>
-            <meta itemprop="image" content=""/>
+            <meta itemProp="image" content=""/>
 
-            {/*{!--Facebook Meta Tags --}*/}
-            <meta property="og:url" content="tonicifre.com"/>
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="Toni Cifre Portfolio"/>
-            <meta property="og:description"
-                  content="Curriculum vitae y portfolio web de Toni Cifre creado con React, Material-UI y Github-API"/>
-            <meta property="og:image" content=""/>
+            {/*/!*{!--Facebook Meta Tags --}*!/*/}
+            {/*<meta property="og:url" content="tonicifre.com"/>*/}
+            {/*<meta property="og:type" content="website"/>*/}
+            {/*<meta property="og:title" content="Toni Cifre Portfolio"/>*/}
+            {/*<meta property="og:description"*/}
+            {/*      content="Curriculum vitae y portfolio web de Toni Cifre creado con React, Material-UI y Github-API"/>*/}
+            {/*<meta property="og:image" content=""/>*/}
 
-            {/*{!--Twitter Meta Tags --}*/}
-            <meta name="twitter:card" content="summary_large_image"/>
-            <meta name="twitter:title" content="Toni Cifre Portfolio"/>
-            <meta name="twitter:description"
-                  content="Curriculum vitae y portfolio web de Toni Cifre creado con React, Material-UI y Github-API"/>
-            <meta name="twitter:image" content=""/>
+            {/*/!*{!--Twitter Meta Tags --}*!/*/}
+            {/*<meta name="twitter:card" content="summary_large_image"/>*/}
+            {/*<meta name="twitter:title" content="Toni Cifre Portfolio"/>*/}
+            {/*<meta name="twitter:description"*/}
+            {/*      content="Curriculum vitae y portfolio web de Toni Cifre creado con React, Material-UI y Github-API"/>*/}
+            {/*<meta name="twitter:image" content=""/>*/}
 
         </Helmet>
     )

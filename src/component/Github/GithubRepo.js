@@ -18,10 +18,7 @@ import Loader from "../Loading";
 import GithubRepoReadme from "./GithubRepoReadme";
 import GithubRepoLanguages from "./GithubRepoLanguages";
 import GithubRepoDescription from "./GithubRepoDescription";
-import * as ReactGA from "react-ga";
-import useGAEventTracker from "../../useGAEventTracker";
 import CustomizedSnackbar from "../Snackbars";
-
 
 class GithubRepo extends Component {
     constructor(props) {
@@ -29,7 +26,8 @@ class GithubRepo extends Component {
 
         this.state = {
             repo: '',
-            error: '',
+            errorRepo: '',
+            isLoadedRepo:false,
 
             languages: {},
             errorLanguages: '',
@@ -49,56 +47,64 @@ class GithubRepo extends Component {
         octokit.repos.get({owner, repo})
             .then(value => {
 
-                octokit.repos.listLanguages({owner, repo})
-                    .then(value => {
-                        this.setState({languages: value.data, isLoadedLanguages: true})
-                    }).catch(reason => {
-                    console.log(reason.toString());
-                    this.setState({errorLanguages: reason.toString(), isLoadedLanguages: true})
-                });
-
-                octokit.repos.getReadme({owner, repo,})
-                    .then(value => {
-                        this.setState({readme: marked(Base64.decode(value.data.content)), isLoadedReadme: true});
-                    }).catch(reason => {
-                    console.log(reason.toString());
-                    this.setState({errorReadme: reason.toString(), isLoadedReadme: true})
-                });
 
 
                 this.setState({repo: value.data})
             }).catch(reason => {
                 console.log(reason.toString());
-                this.setState({error: reason.toString()})
+                this.setState({errorRepo: reason.toString(), isLoadedRepo: true})
+        });
+        octokit.repos.listLanguages({owner, repo})
+            .then(value => {
+                this.setState({languages: value.data, isLoadedLanguages: true})
+            }).catch(reason => {
+            console.log(reason.toString());
+            this.setState({errorLanguages: reason.toString(), isLoadedLanguages: true})
+        });
+
+        octokit.repos.getReadme({owner, repo,})
+            .then(value => {
+                this.setState({readme: marked(Base64.decode(value.data.content)), isLoadedReadme: true});
+            }).catch(reason => {
+            console.log(reason.toString());
+            this.setState({errorReadme: reason.toString(), isLoadedReadme: true})
         });
 
 
-        ReactGA.pageview(window.location.pathname + window.location.search);
     }
 
     render() {
-        let { error } = this.state;
         const {translator} = this.props;
+        let { errorRepo } = this.state;
 
-        if (error){
+        if (errorRepo){
 
-            if (error === 'HttpError: Not Found') {
-                error = translator.noRepo
+            if (errorRepo === 'HttpError: Not Found') {
+                errorRepo = translator.noRepo
             }
 
             return (
-                <Container maxWidth={"md"} style={{marginTop: 25, marginBottom: 25}}>
-                    <h1>{this.props.repo}</h1>
+                <Container maxWidth={"md"} style={{marginTop: 85, marginBottom: 25}}>
+                    <Grid container>
+                        <Grid item sm={1}>
+                            <IconButton aria-label="Back">
+                                <Link to='/github' style={{height: 24, width:24, color:'inherit'}}><ArrowBackIcon /></Link>
+                            </IconButton>
+                        </Grid>
+                        <Grid item sm={11}>
+                            <Typography variant="h3" component="h4" gutterBottom>{this.props.repo}</Typography>
+                        </Grid>
+                    </Grid>
 
                         <Alert severity="error" style={{borderRadius:20}}>
                             <AlertTitle>Error</AlertTitle>
-                            {error}
+                            {errorRepo}
                         </Alert>
                 </Container>
                 )
         }else {
             const {
-                repo,
+                repo, isLoadedRepo,
                 languages, errorLanguages, isLoadedLanguages,
                 readme, isLoadedReadme
             } = this.state;
@@ -107,29 +113,25 @@ class GithubRepo extends Component {
             if (errorReadme === 'HttpError: Not Found'){
                 errorReadme = translator.noReadme;
             }
-            const GAEventTaker = useGAEventTracker("GithubVisit");
 
             return (
-                <Container maxWidth={"md"} style={{marginTop: 25, marginBottom: 25}}>
-                    {!isLoadedLanguages || !isLoadedReadme ? <Loader {...{size: 200, center: true}} /> : null}
-                    <CustomizedSnackbar message={"En los repositorios privados las imagenes del README no se mostraran"} time={8000}/>
+                <Container maxWidth={"md"} style={{marginTop: 85, marginBottom: 25}}>
+                    {!isLoadedLanguages || !isLoadedReadme || isLoadedRepo ? <Loader {...{size: 200, center: true}} /> : null}
+
+                    {repo.private && <CustomizedSnackbar message={"En los repositorios privados las imagenes del README no se mostraran"} time={8000}/>}
 
                     <Grid container alignItems="stretch" spacing={3} style={{marginBottom: 8}}>
-                        <Grid item sm={1} md={1} zeroMinWidth={true} style={{display: 'flex'}}>
+                        <Grid item sm={1} md={1} zeroMinWidth >
                             <IconButton aria-label="Back">
-                                <Link to='/github' style={{height: 24, width:24, color:'inherit'}}>
-                                    <ArrowBackIcon />
-                                </Link>
+                                <Link to='/github' style={{height: 24, width:24, color:'inherit'}}><ArrowBackIcon /></Link>
                             </IconButton>
                         </Grid>
-                        <Grid item sm={11} md={8} zeroMinWidth={true}>
-                            <Typography variant="h3" component="h4" gutterBottom>
-                                {this.props.repo}
-                            </Typography>
+                        <Grid item sm={11} md={8} zeroMinWidth>
+                            <Typography variant="h3" component="h4" gutterBottom>{this.props.repo}</Typography>
                         </Grid>
                         <Grid item xs={12} sm={12} md={3} style={{margin: "auto"}} zeroMinWidth={true}>
                             {repo.private ? '' :
-                                <Button href={repo.html_url} onClick={(e) => GAEventTaker("GithubRepoVisited", this.props.repo)}>
+                                <Button href={repo.html_url} >
                                     <GitHubIcon style={{marginRight: 6}}/>{translator.viewGithub}
                                 </Button>
                             }

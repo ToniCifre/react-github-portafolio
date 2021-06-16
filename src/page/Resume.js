@@ -1,14 +1,12 @@
 import React from 'react';
 
-import Container from "@material-ui/core/Container";
-import ResumeTopDescription from "../component/resume/ResumeTopDescription";
-import ResumeAbilities from "../component/resume/ResumeAbilities";
-import ResumeContact from "../component/resume/ResumeContact";
-import ResumeProgramming from "../component/resume/ResumeProgrammingLanguages";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import ResumeDatabase from "../component/resume/ResumeDatabase";
+import {Container, Grid} from "@material-ui/core";
 
+import ResumeContact from "../component/resume/ResumeContact";
+import ResumeDatabase from "../component/resume/ResumeDatabase";
+import ResumeAbilities from "../component/resume/ResumeAbilities";
+import ResumeProgramming from "../component/resume/ResumeProgrammingLanguages";
+import ResumeTopDescription from "../component/resume/ResumeTopDescription";
 
 
 const Resume = (props) => {

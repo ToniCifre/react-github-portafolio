@@ -86,7 +86,7 @@ export default function NavBar(props) {
                             : ''}
                         {width >= 630?
                             <div>
-                                <ThemeSelector switch_theme={switch_theme} style={{marginRight: 15, color: '#fff'}}/>
+                                <ThemeSelector switch_theme={switch_theme}/>
                                 <LanguageSelector />
                             </div>
                             : ''}

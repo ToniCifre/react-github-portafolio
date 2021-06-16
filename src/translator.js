@@ -20,9 +20,11 @@ export const translations = {
         "private": "Private",
 
         "repoDescription": {
-          "REIN":"Current subject of Information Recovery. With indexing tools, Elasticsearch and web scraping to be " +
-              "able to obtain, save and search the information in the most efficient way possible",
-          "HexGame":""
+          "AutonomousCar":"Autonomous Car with object detection and wifi triangulation for raspberry pi and arduino",
+          "DataMining":"UPC Data Mining subject",
+          "Parallelism":"Parallel programming with OpenMP",
+          "REIN":"Algorithms for information retrieval and control with ElasticSearch",
+          "HexGame":"HexGame usign Min-Max alpha beta pruning with dijkstra and multithreading optimized",
         },
 
         "table": {
@@ -47,42 +49,61 @@ export const translations = {
         "languages": {
           "title": "Programming languages",
           "description": "Easy learning of other languages by having the logical bases of programming solid.",
-          "languagesList":[
-            ['Java',
-              [
-                ['- High level and domain of multiple frameworks (Maven, Spring boot, Hibernate...)'],
-                ['- Multithreading in deep algorithms.'],
-                ['- Scraping with selenium.'],
-                ['- Mastery of multiple tree search methods.'],
-                ['- FrontEnd and BackEnd creation with Java, Spring, Maven, Thymeleaf, Hibernate...'],
-                ['- TCP and UDP-based communication between sockets for data and video.'],
+          "languagesList": [
+            {
+              'lang': 'Python',
+              'con':[
+                ['Implementation of artificial intelligence: Reinforcement Learning and Deep Learning with TensorFlow, keras and OpenCV.'],
+                ['Data mining with Jupyter Notebook.'],
+                ['Information retrieval with elasticsearch.'],
+                ['Automation of tasks: monitoring, analysis and collection of information from a web or local resource.'],
+                ['Multithreading optimization.'],
+                ['Rest API with Flask and WebSocket.'],
+                ['IoT with MQTT.'],
                 ['ETC']
-              ]
-            ],
-            ['Python',
-              [
-                ['- Implementation of artificial intelligence: Reinforcement Learning and Deep Learning with TensorFlow, keras and OpenCV.'],
-                ['- Data mining with Jupyter Notebook.'],
-                ['- Information retrieval with elasticsearch.'],
-                ['- Multi-task automation: resource monitoring, analysis and information gathering with scraping...'],
-                ['- Multithreading'],
+              ],
+              'icon': 'python'
+            },
+            {
+              'lang': 'Java',
+              'con':[
+                ['Knowledge of multiple frameworks (Maven, Spring boot, Hibernate ...)'],
+                ['Multithreading in deep algorithms.'],
+                ['Scraping with selenium.'],
+                ['Mastery of multiple tree search methods.'],
+                ['FrontEnd and BackEnd creation with Spring, Maven, Thymeleaf, Hibernate ...'],
+                ['Communication between TCP and UDP-based sockets for data and video.'],
                 ['ETC']
-              ]
-            ],
-            ['Node.Js',
-              [
-                ['- Design and creation of Back End and API'],
-                ['- Communication through sockets (Socket.IO)'],
-                ['- Database administration through the mongoose framework'],
-              ]
-            ],
-            ['C y C++',
-              [
-                ['- Basic level in parallelism (OpenMP)'],
-                ['- Design of custom data structures (stacks, lists, trees...).']
-              ]
-            ],
-            ['HTML, CSS, React, JavaScript, Angular ...', ['Use in various applications made for personal and educational purposes.']],
+              ],
+              'icon': 'java'
+            },
+            {
+              'lang': 'Node.Js',
+              'con':[
+                ['Design and creation of Back End and API.'],
+                ['Real-time communication through sockets (Socket.IO).'],
+                ['Database administration with mongoose.'],
+                ['User control.'],
+              ],
+              'icon': 'node'
+            },
+            {
+              'lang': 'C and C ++',
+              'con':[
+                ['Basic level in parallelism with OpenMP'],
+                ['Design of custom data structures (dictionaries, lists, trees ...).'],
+                ['Optimization of search and sorting methods.'],
+                ['Control of sensors and IoT devices with MQTT.']
+              ],
+              'icon': 'c'
+            },
+            {
+              'lang': 'HTML, CSS, React, JavaScript, Angular ...',
+              'con':[
+                ['Used to make applications for personal or educational purposes.']
+              ],
+              'icon': 'web'
+            },
           ],
         },
         "database": {
@@ -124,11 +145,11 @@ export const translations = {
         "private": "Privado",
 
         "repoDescription": {
-          "REIN":"Actual asignatura de Recuperación de la información. Con las herramientas de indexación, " +
-              "Elasticsearch y scraping web para poder obtener, guardar y buscar la información de manera más eficaz posible",
-          "HexGame":"fklu hgspfdlk jgspdfu hgspiufha`sdfhlskfdj vhoxcuvbs fdg" +
-              "sfdvpjhzxlvkjhxfouw ghoruthfuhvsfdlgk jshfg" +
-              "sfd gosfud"
+          "AutonomousCar":"Coche autónomo con detección de objetos y triangulación wifi para raspberry pi y arduino",
+          "DataMining":"UPC Data Mining",
+          "Parallelism":"Programación en paralelo con OpenMP",
+          "REIN":"Algoritmos para la recuperación de la informacion y su control con ElasticSearch",
+          "HexGame":"Hex Game que usa la poda alfa beta de Minimax con dijkstra y optimización de subprocesos múltiples",
         },
 
         "table": {
@@ -154,50 +175,69 @@ export const translations = {
           "title": "Lenguajes de programación",
           "description": "Fácil aprendizaje de otros lenguajes al tener sólidas las bases lógicas de la programación.",
           "languagesList":[
-            ['Java',
-              [
-                ['- Alto nivel y dominio de múltiples framework (Maven, Spring boot, Hibernate...)'],
-                ['- Multithreading en algoritmos profundos.'],
-                ['- Scraping con selenium.'],
-                ['- Dominio de múltiples métodos de búsqueda en árboles.'],
-                ['- Creación de FrontEnd y BackEnd con Java, Spring, Maven, Thymeleaf, Hibernate...'],
-                ['- Comunicación entre sockets basados en TCP y UDP para datos y video.'],
-                ['ETC']
-              ]
-            ],
-            ['Python',
-              [
-                ['- Implementación de inteligencia artificial: Reinforcement Learning y Deep Learning con TensorFlow, keras y OpenCV.'],
-                ['- Minería de datos con Jupyter Notebook.'],
-                ['- Recuperación de la información con elasticsearch.'],
-                ['- Automatización de múltiples tareas: monitorización de recursos y análisis y recopilación de información con scraping...'],
-                ['- Multithreading'],
-                ['ETC']
-              ]
-            ],
-            ['Node.Js',
-              [
-                ['- Diseño y creación de Back End y API'],
-                ['- Comunicación a través de sockets (Socket.IO)'],
-                ['- Administración de bases de datos a través de mongoose'],
-              ]
-            ],
-            ['C y C++',
-              [
-                ['- Nivel básico en paralelismo (OpenMP)'],
-                ['- Diseño de estructuras de datos personalizadas (pilas, listas, arboles...).']
-              ]
-            ],
-            ['HTML, CSS, React, JavaScript, Angular ...', ['Utilización en diversas aplicaciones realizadas con fines personales o educativos.']],
+            {
+              'lang':'Python',
+              'con':[
+                  ['Implementación de inteligencia artificial: Reinforcement Learning y Deep Learning con TensorFlow, keras y OpenCV.'],
+                  ['Minería de datos con Jupyter Notebook.'],
+                  ['Recuperación de la información con elasticsearch.'],
+                  ['Automatización de tareas: monitorización, análisis y recopilación de información de un recurso web o local.'],
+                  ['Optimización de multithreading.'],
+                  ['Rest API con Flask y WebSocket.'],
+                  ['IoT con MQTT.'],
+                  ['ETC']
+              ],
+              'icon':'python'
+            },
+            {
+              'lang': 'Java',
+              'con':[
+                  ['Conocimiento de múltiples framework (Maven, Spring boot, Hibernate...)'],
+                  ['Multithreading en algoritmos profundos.'],
+                  ['Scraping con selenium.'],
+                  ['Dominio de múltiples métodos de búsqueda en árboles.'],
+                  ['Creación de FrontEnd y BackEnd con Spring, Maven, Thymeleaf, Hibernate...'],
+                  ['Comunicación entre sockets basados en TCP y UDP para datos y video.'],
+                  ['ETC']
+                ],
+              'icon':'java'
+            },
+            {
+              'lang':'Node.Js',
+              'con':[
+                  ['Diseño y creación de Back End y API.'],
+                  ['Comunicación a tiempo real a través de sockets (Socket.IO).'],
+                  ['Administración de bases de datos con mongoose.'],
+                  ['Control de usuarios.'],
+              ],
+              'icon':'node'
+            },
+            {
+              'lang':'C y C++',
+              'con':[
+                  ['Nivel básico en paralelismo con OpenMP'],
+                  ['Diseño de estructuras de datos personalizadas (diccionarios, listas, arboles...).'],
+                  ['Optimizacion de metodos de busqueda i ordenación.'],
+                  [ 'Control de sensores y dispositivos IoT con MQTT.']
+                ],
+              'icon':'c'
+            },
+            {
+              'lang':'HTML, CSS, React, JavaScript, Angular ...',
+              'con':[
+                  ['Utilizadas para realizar aplicaciones con fines personales o educativos.']
+              ],
+              'icon':'web'
+            },
           ],
         },
         "database": {
           "title": "Bases de Datos",
-          "description": "Análisis de la eficiencia en diferentes sistemas de bases de datos y tipos de consultas." +
+          "description": "Análisis de la eficiencia en diferentes sistemas de bases de datos y tipos de consultas.\n" +
               "Conocimiento de varios framework para la manipulación de bases de datos como Hibernate (Java), Django (Python) y mongoose (Node.Js).",
           "databaseList":[
-            ['BD relacionales:', 'Creación, análisis y optimización en MySQL Y PostgreSQL.'],
-            ['BD no relacionales:', 'Nivel básico tanto teórico como práctico de MongoDB.'],
+            ['BD relacionales:', 'Creación, análisis y optimización en MySQL y PostgreSQL.'],
+            ['BD no relacionales:', 'Nivel intermedio teórico i práctico en MongoDB.'],
           ],
         },
         "contact": {
@@ -207,7 +247,7 @@ export const translations = {
             ['github', '@ToniCifre', 'https://github.com/ToniCifre'],
             ['phone', '+34651173909'],
             ['linkedin', 'toni-cifre', 'https://www.linkedin.com/in/toni-cifre/'],
-            ['cv', 'Descarga CV', 'CV-AntoniCifreVicens.pdf']
+            ['cv', 'Descargar CV', 'CV-AntoniCifreVicens.pdf']
           ]
         }
       }
@@ -231,12 +271,11 @@ export const translations = {
         "private": "Privat",
 
         "repoDescription": {
-          "REIN":"Actual assignatura de Recuperació de la informació. Amb les eines d'indexació, Elasticsearch i " +
-              "scraping web podem obtenir, guardar i buscar la informació de manera més eficaç possible.",
-
-          "HexGame":"fklu hgspfdlk jgspdfu hgspiufha`sdfhlskfdj vhoxcuvbs fdg" +
-              "sfdvpjhzxlvkjhxfouw ghoruthfuhvsfdlgk jshfg" +
-              "sfd gosfud"
+          "AutonomousCar": "Cotxe autònom amb detecció d'objectes i triangulació wifi per raspberry pi i arduino",
+          "DataMining": "UPC Data Mining",
+          "Parallelism": "Programació en paral·lel amb OpenMP",
+          "REIN": "Algorismes per a la recuperació de la informació i el seu control amb ElasticSearch",
+          "HexGame": "Hex Game que fa servir la poda alfa beta de Minimax amb Dijkstra i optimització de subprocessos múltiples",
         },
 
         "table": {
@@ -255,48 +294,72 @@ export const translations = {
             "prèviament en desenvolupament d'aplicacions multiplataforma.",
         "abilities": {
           "title": "Habilidades",
-          "abilitiesList": [['Gestió de Projectes', 3], ['Desenvolupament de software', 4], ['Front End', 3], ['Back End', 4],
-            ['Aprenentatge Autònom', 4], ['Bases de Dades', 3], ['Metodologia Àgil', 3]]
+          "abilitiesList": [['Gestió de Projectes', 3],
+                            ['Desenvolupament de software', 4],
+                            ['Front End', 3],
+                            ['Back End', 4],
+                            ['Aprenentatge Autònom', 4],
+                            ['Bases de Dades', 3],
+                            ['Metodologia Àgil', 3]]
         },
         "languages": {
           "title": "Llenguatges de programació",
           "description": "Fàcil aprenentatge d'altres llenguatges al tenir sòlides les bases lògiques de la programació.",
-          "languagesList":[
-            ['Java',
-              [
-                [ '- Alt nivell i domini de múltiples framework (Maven, Spring boot, Hibernate ...)'],
-                [ '- multithreading en algoritmes profunds.'],
-                [ '- scraping amb selenium.'],
-                [ '- Domini de múltiples mètodes de cerca en arbres.'],
-                [ '- Creació de FrontEnd i backend amb Java, Spring, Maven, Thymeleaf, Hibernate ...'],
-                [ '- Comunicació entre sockets basats en TCP i UDP per a dades i vídeo.'],
+          "languagesList": [
+            {
+              'lang': 'Python',
+              'con': [
+                  [ 'Implementació d\'intel·ligència artificial: Reinforcement Learning i Deep Learning amb TensorFlow, keras i OpenCV.'],
+                  [ 'Mineria de dades amb Jupyter Llibreta.'],
+                  [ 'Recuperació de la informació amb elasticsearch.'],
+                  [ 'Automatització de tasques: monitorització, anàlisi i recopilació d\'informació d\'un recurs web o local.'],
+                  [ 'Optimització de multithreading.'],
+                  [ 'Rest API amb Flask i websocket.'],
+                  [ 'IOT amb MQTT.'],
+                  [ 'ETC']
+              ],
+              'icon': 'python'
+            },
+            {
+              'lang': 'Java',
+              'con': [
+                [ 'Coneixement de múltiples framework (Maven, Spring boot, Hibernate ...)'],
+                [ 'Multithreading en algoritmes profunds.'],
+                [ 'Scraping amb selenium.'],
+                [ 'Domini de múltiples mètodes de recerca en arbres.'],
+                [ 'Creació de FrontEnd i backend amb Spring, Maven, Thymeleaf, Hibernate ...'],
+                [ 'Comunicació entre sòcols basats en TCP i UDP per a dades i vídeo.'],
                 [ 'ETC']
-              ]
-            ],
-            ['Python',
-              [
-                ["- Implementació d'intel·ligència artificial: Reinforcement Learning i Deep Learning amb TensorFlow, keras i OpenCV."],
-                ['- Mineria de dades amb Jupyter Notebook.'],
-                ['- Recuperació de la informació amb elasticsearch.'],
-                ["- Automatització de múltiples tasques: monitorització de recursos, anàlisi i recopilació d'informació amb scraping ..."],
-                ['- Multithreading'],
-                ['ETC']
-              ]
-            ],
-            ['Node.Js',
-              [
-                ['- Disseny i creació de Back End i API'],
-                ['- Comunicació a través de sockets (Socket.IO)'],
-                ['- Administració de bases de dades a través de Mongoose'],
-              ]
-            ],
-            ['C y C++',
-              [
-                ['- Nivell bàsic en paral·lelisme (OpenMP)'],
-                ["- Disseny d'estructures de dades personalitzades (piles, llistes, arbres ...)."]
-              ]
-            ],
-            ['HTML, CSS, React, JavaScript, Angular ...', ['Utilització en diverses aplicacions realitzades amb fins personals o educatius.']],
+              ],
+              'icon': 'java'
+            },
+            {
+              'lang': 'NODE.JS',
+              'con': [
+                [ 'Disseny i creació de Back End i API.'],
+                [ 'Comunicació a temps real a través de sockets (Socket.IO).'],
+                [ 'Administració de bases de dades amb Mongoose.'],
+                ['Control d\'usuaris. '],
+              ],
+              'icon': 'node'
+            },
+            {
+              'lang': 'C i C ++',
+              'con': [
+                [ 'Nivell bàsic en paral·lelisme amb OpenMP'],
+                [ 'Disseny d\'estructures de dades personalitzades (diccionaris, llistes, arbres ...).'],
+                [ 'Optimització de mètodes de cerca i ordenació.'],
+                [ 'Control de sensors i dispositius IoT amb MQTT.']
+              ],
+              'icon': 'c'
+            },
+            {
+              'lang': 'HTML, CSS, React, JavaScript, Angular ...',
+              'con': [
+                [ 'Utilitzades per realitzar aplicacions amb fins personals o educatius.']
+              ],
+              'icon': 'web'
+            },
           ],
         },
         "database": {
